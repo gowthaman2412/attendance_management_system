@@ -1,0 +1,2067 @@
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-09T13:13:00.821Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-09T13:13:52.697Z"}
+{"level":"error","message":"MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{},"setName":null,"stale":false,"type":"Unknown"},"stack":"MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n    at _handleConnectionErrors (C:\\Users\\GowthamanP\\Desktop\\App build using trae\\backend\\node_modules\\mongoose\\lib\\connection.js:816:11)\n    at NativeConnection.openUri (C:\\Users\\GowthamanP\\Desktop\\App build using trae\\backend\\node_modules\\mongoose\\lib\\connection.js:791:11)\n    at runNextTicks (node:internal/process/task_queues:60:5)\n    at listOnTimeout (node:internal/timers:545:9)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-03-09T13:14:22.703Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-09T13:21:28.961Z"}
+{"level":"error","message":"MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{},"setName":null,"stale":false,"type":"Unknown"},"stack":"MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n    at _handleConnectionErrors (C:\\Users\\GowthamanP\\Desktop\\App build using trae\\backend\\node_modules\\mongoose\\lib\\connection.js:816:11)\n    at NativeConnection.openUri (C:\\Users\\GowthamanP\\Desktop\\App build using trae\\backend\\node_modules\\mongoose\\lib\\connection.js:791:11)","timestamp":"2025-03-09T13:21:58.958Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-09T13:27:04.056Z"}
+{"level":"error","message":"MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{},"setName":null,"stale":false,"type":"Unknown"},"stack":"MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n    at _handleConnectionErrors (C:\\Users\\GowthamanP\\Desktop\\App build using trae\\backend\\node_modules\\mongoose\\lib\\connection.js:816:11)\n    at NativeConnection.openUri (C:\\Users\\GowthamanP\\Desktop\\App build using trae\\backend\\node_modules\\mongoose\\lib\\connection.js:791:11)\n    at runNextTicks (node:internal/process/task_queues:60:5)\n    at listOnTimeout (node:internal/timers:545:9)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-03-09T13:27:34.076Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-09T13:28:11.859Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-03-09T14:23:11.410Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-09T14:23:11.420Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-03-09T14:27:03.912Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-09T14:27:03.920Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-03-09T14:29:37.407Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-09T14:29:37.418Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-09T15:59:17.777Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-09T15:59:43.349Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-03-09T17:40:41.304Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-09T17:40:41.321Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-03-09T17:40:42.866Z"}
+{"level":"info","message":"POST /undefined/api/auth/login","timestamp":"2025-03-09T18:45:57.028Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-09T18:46:49.631Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-03-15T11:01:48.879Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-15T11:01:48.944Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-15T11:03:55.285Z"}
+{"level":"info","message":"POST /undefined/api/auth/register","timestamp":"2025-03-15T11:07:29.576Z"}
+{"level":"info","message":"POST /undefined/api/auth/register","timestamp":"2025-03-15T11:09:25.471Z"}
+{"level":"info","message":"POST /undefined/api/auth/register","timestamp":"2025-03-15T11:12:17.467Z"}
+{"level":"info","message":"POST /undefined/api/auth/register","timestamp":"2025-03-15T11:21:43.040Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-15T11:24:17.713Z"}
+{"level":"info","message":"POST /undefined/api/auth/register","timestamp":"2025-03-15T11:27:27.913Z"}
+{"level":"info","message":"POST /undefined/api/auth/register","timestamp":"2025-03-15T11:30:43.073Z"}
+{"level":"info","message":"POST /undefined/api/auth/register","timestamp":"2025-03-15T11:32:41.266Z"}
+{"level":"info","message":"POST /undefined/api/auth/register","timestamp":"2025-03-15T11:35:11.515Z"}
+{"level":"info","message":"POST /undefined/api/auth/register","timestamp":"2025-03-15T11:58:53.417Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-03-15T12:16:46.111Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-15T12:16:46.146Z"}
+{"level":"info","message":"POST /undefined/api/auth/register","timestamp":"2025-03-15T12:17:32.488Z"}
+{"clientVersion":"6.4.1","errorCode":"P1012","level":"error","message":"Database connection error: \u001b[1;91merror\u001b[0m: \u001b[1mEnvironment variable not found: DATABASE_URL.\u001b[0m\n  \u001b[1;94m-->\u001b[0m  \u001b[4mschema.prisma:7\u001b[0m\n\u001b[1;94m   | \u001b[0m\n\u001b[1;94m 6 | \u001b[0m  provider = \"postgresql\"\n\u001b[1;94m 7 | \u001b[0m  url      = \u001b[1;91menv(\"DATABASE_URL\")\u001b[0m\n\u001b[1;94m   | \u001b[0m\n\nValidation Error Count: 1","name":"PrismaClientInitializationError","stack":"PrismaClientInitializationError: \u001b[1;91merror\u001b[0m: \u001b[1mEnvironment variable not found: DATABASE_URL.\u001b[0m\n  \u001b[1;94m-->\u001b[0m  \u001b[4mschema.prisma:7\u001b[0m\n\u001b[1;94m   | \u001b[0m\n\u001b[1;94m 6 | \u001b[0m  provider = \"postgresql\"\n\u001b[1;94m 7 | \u001b[0m  url      = \u001b[1;91menv(\"DATABASE_URL\")\u001b[0m\n\u001b[1;94m   | \u001b[0m\n\nValidation Error Count: 1\n    at t (C:\\Users\\GowthamanP\\Desktop\\App build using trae\\backend\\node_modules\\@prisma\\client\\runtime\\library.js:112:2473)\n    at async startServer (C:\\Users\\GowthamanP\\Desktop\\App build using trae\\backend\\server.js:80:5)","timestamp":"2025-03-15T12:20:29.707Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-03-15T12:20:51.845Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-15T12:20:51.862Z"}
+{"level":"info","message":"GET /main.73b08be062dcbd64ba13.hot-update.json","timestamp":"2025-03-15T12:44:33.069Z"}
+{"level":"info","message":"GET /main.363c037a461de17d8818.hot-update.json","timestamp":"2025-03-15T13:04:10.115Z"}
+{"level":"info","message":"GET /main.363c037a461de17d8818.hot-update.json","timestamp":"2025-03-15T13:04:16.007Z"}
+{"level":"info","message":"GET /main.88e9c9307017e0a4e946.hot-update.json","timestamp":"2025-03-15T13:24:30.939Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-15T13:26:15.171Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-03-15T14:11:58.991Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-15T14:11:59.006Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-15T14:13:27.737Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-03-15T14:16:37.850Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-15T14:16:37.864Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-15T14:17:01.884Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-03-15T14:21:00.833Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-15T14:21:00.873Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-15T14:21:24.911Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-15T14:21:41.178Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-03-15T14:24:17.992Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:24:18.557Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:24:18.600Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:24:18.882Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:24:18.920Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:24:36.800Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:24:37.117Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:24:38.030Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:24:38.353Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:24:38.804Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:24:39.128Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:24:39.885Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:24:40.208Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:24:47.991Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:24:48.312Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:24:49.364Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:24:49.702Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:25:43.363Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:25:43.402Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:25:46.312Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:25:46.627Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:27:53.034Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:28:42.897Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:28:42.905Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:28:53.602Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:28:53.608Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:28:58.613Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:28:58.928Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:29:30.696Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:29:30.712Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:29:46.980Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:29:46.994Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:30:20.376Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:30:20.383Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:30:21.591Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:30:21.597Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:30:22.917Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:30:22.931Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:30:24.576Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:30:24.588Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-03-15T14:35:04.126Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-03-15T14:35:04.147Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:35:14.173Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:35:14.208Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:35:14.239Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:35:14.281Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:35:26.357Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:35:26.364Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:52.841Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:52.852Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:53.837Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:53.846Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:36:54.538Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:36:54.544Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:55.281Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:55.289Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:36:56.083Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:36:56.091Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:56.813Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:56.822Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:57.576Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:57.582Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:58.341Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:58.347Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:36:59.041Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:36:59.061Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:59.254Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:59.263Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:59.929Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:36:59.936Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:37:00.119Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:37:00.129Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:37:00.289Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:37:00.294Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:37:00.534Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:37:00.540Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:37:00.687Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:37:00.695Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:37:00.899Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:37:00.905Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-03-15T14:37:17.453Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-03-15T14:37:29.083Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:37:29.387Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:37:29.393Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:37:29.399Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:37:29.412Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:37:38.935Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:37:38.938Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:37:38.945Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:37:38.948Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-03-15T14:37:57.501Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-03-15T14:38:06.396Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:06.773Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:38:06.777Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:06.788Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:38:06.805Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:15.442Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:15.446Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:38:16.565Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:38:16.576Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:38:18.314Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:38:18.336Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:27.166Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:27.170Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:28.090Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:28.096Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:38:28.918Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:38:28.945Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:38:29.690Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:38:29.716Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:30.775Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:30.780Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:38:46.628Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:38:46.638Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:38:48.138Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:38:48.162Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:48.867Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:48.871Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:49.591Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:49.596Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:38:50.089Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-03-15T14:38:50.117Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:38:50.302Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:38:50.313Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:50.515Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:50.520Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:51.058Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:38:51.063Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:40:26.453Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:40:26.458Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:40:26.466Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:40:26.579Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:40:26.640Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:40:26.645Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:40:26.862Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T14:40:26.873Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:40:28.275Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:40:28.279Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:40:46.409Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:40:46.413Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:40:46.423Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:40:46.447Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:40:56.408Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:40:56.419Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:40:56.454Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:40:56.471Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:41:41.550Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:41:41.553Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T14:41:41.576Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:41:41.577Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-15T14:46:02.290Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-15T14:46:07.147Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-15T14:46:26.209Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-15T14:46:28.928Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-03-15T14:46:44.699Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:46:45.123Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:46:45.129Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:46:45.134Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:46:45.149Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:46:51.038Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:46:51.065Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-03-15T14:46:52.747Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:46:52.750Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-03-15T14:46:52.756Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:46:53.081Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-03-15T14:46:53.778Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-03-15T14:46:53.783Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-03-15T14:46:54.809Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-03-15T14:46:54.812Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-03-15T14:46:54.825Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-03-15T14:46:54.828Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-03-15T14:46:56.080Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-03-15T14:46:56.393Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-03-15T14:47:03.885Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-03-15T14:47:03.887Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-03-15T14:47:03.890Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-03-15T14:47:03.892Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-03-15T14:47:05.025Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-03-15T14:47:05.028Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-03-15T14:47:08.150Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:47:08.157Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-03-15T14:47:08.163Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:47:08.188Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:47:09.560Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:47:09.894Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:47:10.444Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:47:10.449Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:47:12.360Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:47:12.382Z"}
+{"level":"info","message":"POST /api/users","timestamp":"2025-03-15T14:47:35.721Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:47:38.744Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:47:38.759Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T14:47:38.779Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:47:39.339Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-03-15T14:47:43.745Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:47:45.189Z"}
+{"level":"info","message":"GET /api/users?role=admin","timestamp":"2025-03-15T14:47:46.052Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-03-15T14:47:47.246Z"}
+{"level":"info","message":"GET /api/users?role=admin","timestamp":"2025-03-15T14:47:53.876Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:47:55.499Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-03-15T14:47:56.135Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-03-15T14:47:56.148Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:47:56.152Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:47:56.470Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-03-15T14:47:57.202Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-03-15T14:47:57.206Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-03-15T14:47:58.156Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-03-15T14:47:58.158Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-03-15T14:47:58.167Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-03-15T14:47:58.170Z"}
+{"level":"info","message":"GET /api/reports/courses","timestamp":"2025-03-15T14:48:08.660Z"}
+{"level":"info","message":"GET /api/reports/permissions","timestamp":"2025-03-15T14:48:09.887Z"}
+{"level":"info","message":"GET /api/reports/courses","timestamp":"2025-03-15T14:48:12.257Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-03-15T14:48:13.297Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-03-15T14:48:14.548Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-03-15T14:48:14.565Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:48:30.458Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:48:30.463Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:55:37.261Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:55:37.552Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-03-15T14:55:38.632Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-03-15T14:55:38.639Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:55:38.652Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:55:38.980Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-03-15T14:55:42.477Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-03-15T14:55:42.483Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-03-15T14:55:44.689Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-03-15T14:55:44.691Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-03-15T14:55:44.701Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-03-15T14:55:44.704Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:55:46.932Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:55:47.258Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-03-15T14:55:48.354Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-03-15T14:55:48.368Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:55:52.795Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:55:52.803Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-03-15T14:55:54.434Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-03-15T14:55:54.764Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:56:22.437Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:56:22.441Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:56:23.524Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:56:23.558Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-03-15T14:56:33.337Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-03-15T14:56:33.342Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:56:33.651Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:56:33.680Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-03-15T14:56:34.110Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-03-15T14:56:34.118Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-03-15T14:56:34.891Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-03-15T14:56:34.901Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:56:36.255Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:56:36.260Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:56:38.355Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:56:38.700Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:56:39.814Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:56:39.836Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:57:21.921Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:57:22.242Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:57:22.658Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:57:22.662Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-03-15T14:57:23.348Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-03-15T14:57:23.670Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-03-15T14:57:24.093Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-03-15T14:57:24.098Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-03-15T14:57:24.887Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-03-15T14:57:24.892Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:57:24.895Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:57:25.230Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:57:25.717Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:57:26.049Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-03-15T14:57:27.755Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-03-15T14:57:27.761Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:57:27.764Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-03-15T14:57:28.112Z"}
+{"level":"info","message":"POST /api/courses","timestamp":"2025-03-15T14:57:47.392Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:57:58.728Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T14:57:58.750Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:57:59.577Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-03-15T14:57:59.668Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-03-15T14:58:00.485Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-03-15T14:58:00.493Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-03-15T14:58:00.501Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-03-15T14:58:00.504Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-15T15:01:16.482Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T15:01:17.200Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T15:01:17.208Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-03-15T15:01:17.225Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T15:01:17.236Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-03-15T15:01:41.949Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-03-15T15:01:52.395Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T15:01:52.828Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T15:01:52.847Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T15:02:07.195Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T15:02:07.210Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T15:03:01.728Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T15:03:01.739Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T16:10:30.880Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T16:10:31.257Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T16:10:34.494Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T16:10:34.508Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-03-15T16:10:57.793Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-03-15T16:10:57.800Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-03-15T16:10:57.802Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-03-15T16:10:57.824Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-03-15T16:10:57.871Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-03-15T16:10:57.874Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-03-15T16:10:58.161Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-03-15T16:10:58.164Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-03-15T16:10:58.191Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-03-15T16:10:58.197Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-03-15T16:10:58.206Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-03-15T16:10:58.222Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-03-15T16:10:58.494Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-03-15T16:10:58.497Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-03-15T16:10:58.526Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-03-15T16:10:58.538Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-03-15T17:58:10.820Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T17:58:11.900Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-03-15T17:58:11.944Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-03-15T17:58:12.182Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-03-15T17:58:12.276Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T17:58:23.299Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T17:58:23.319Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T17:58:26.305Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-03-15T17:58:26.365Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T17:58:35.311Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-03-15T17:58:35.317Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T14:14:16.261Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T14:14:16.289Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-04-17T14:44:03.198Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-04-17T14:44:17.102Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T14:44:17.439Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:44:18.184Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:44:18.215Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T14:44:38.449Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:44:38.934Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:44:38.979Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T14:44:55.996Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:44:56.635Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:44:56.652Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:45:35.868Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:45:35.879Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T14:45:42.110Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T14:45:42.128Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T14:45:51.140Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T14:45:51.148Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:45:57.818Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:45:57.826Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T14:46:53.836Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T14:46:53.869Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T14:47:13.813Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T14:47:13.854Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:47:59.909Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:47:59.939Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:48:01.233Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:48:01.245Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:48:08.677Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:48:08.717Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T14:53:25.151Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T14:53:33.401Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T14:53:53.546Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:53:54.159Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:53:54.168Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T14:54:07.090Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:54:07.728Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:54:07.743Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T14:54:20.034Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:54:21.011Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:54:21.044Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:54:56.070Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:54:56.079Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:57:09.518Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:57:47.889Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:57:51.128Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:57:51.137Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:57:59.348Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:57:59.357Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:58:13.203Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:58:13.207Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T14:58:14.593Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T14:58:14.601Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T14:58:15.553Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T14:58:15.559Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:58:43.310Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T14:58:43.318Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T15:00:18.746Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T15:00:18.754Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T15:00:24.393Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:00:25.149Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:00:25.168Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:18:05.147Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:18:05.203Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T15:19:35.941Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T15:19:39.163Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T15:19:46.060Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T15:21:36.008Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:25:05.443Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:25:05.460Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:28:28.966Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:28:28.986Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T15:32:53.805Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T15:32:55.028Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:32:55.101Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T15:32:55.770Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:32:55.852Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:32:55.917Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:32:56.010Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:37:04.570Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:37:04.655Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:37:42.701Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:37:42.730Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:38:22.730Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:38:22.755Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:38:58.832Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:38:58.871Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:39:31.434Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:39:31.459Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:40:13.179Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:40:13.224Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:40:15.558Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T15:40:15.633Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T15:40:15.732Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:40:16.131Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:40:16.165Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:40:16.424Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:42:43.086Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:42:43.142Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:44:39.755Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T15:44:39.895Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T15:44:40.068Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:44:40.726Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:44:40.762Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:44:40.865Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T15:44:40.917Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T15:44:41.278Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:44:51.494Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:44:51.546Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T15:44:51.565Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T15:44:51.615Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T15:44:54.633Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T15:44:54.712Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T15:44:55.888Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T15:44:55.910Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:47:07.791Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:47:07.816Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:47:44.995Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:47:45.029Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:48:29.510Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:48:29.543Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T15:48:37.538Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T15:48:38.046Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T15:48:38.131Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T15:48:38.348Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T15:48:41.145Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T15:48:41.232Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:48:43.637Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:48:43.865Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T15:48:43.886Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T15:48:43.921Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:48:46.106Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:48:46.129Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:48:46.150Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:48:46.196Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T15:48:46.220Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T15:48:46.285Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:50:01.037Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:50:01.081Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:50:39.042Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:50:39.060Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:50:55.795Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:50:55.825Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:51:24.612Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:51:24.638Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:51:32.918Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T15:51:33.018Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T15:51:33.269Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:51:33.629Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:51:33.648Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:51:33.710Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T15:51:33.735Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T15:51:33.789Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:51:41.617Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:51:41.653Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T15:51:41.675Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T15:51:41.767Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T15:51:46.406Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T15:51:46.476Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T15:51:51.021Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T15:51:51.050Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:52:22.650Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:52:22.675Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:52:28.053Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:52:28.358Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:52:28.378Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:52:28.445Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T15:52:28.467Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T15:52:28.753Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:52:33.912Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:52:33.935Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T15:52:33.951Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T15:52:34.008Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:53:33.739Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:53:33.754Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:54:35.231Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:54:35.248Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:54:53.340Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:54:53.356Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:55:13.804Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:55:13.819Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:55:44.825Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:55:44.847Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:56:03.202Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:56:03.219Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:56:17.960Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:56:17.977Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:57:12.532Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:57:12.551Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:57:30.608Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:57:30.632Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:57:45.294Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:57:45.310Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:57:56.819Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:57:56.837Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:58:07.555Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:58:07.563Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:58:17.663Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:58:17.672Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:58:23.834Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T15:58:23.983Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T15:58:24.048Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:58:24.226Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T15:58:24.241Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T15:58:24.281Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:58:26.379Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:58:26.404Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:58:26.425Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:58:26.449Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T15:58:26.464Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T15:58:26.593Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T15:58:29.641Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T15:58:29.716Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T15:58:32.089Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T15:58:32.098Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:59:10.860Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:59:10.901Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:59:10.917Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:59:10.950Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T15:59:10.975Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T15:59:11.016Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T15:59:14.316Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T15:59:14.327Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:59:17.437Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T15:59:17.452Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:59:17.461Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T15:59:17.490Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T15:59:17.499Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T15:59:17.533Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T15:59:34.171Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T15:59:34.186Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T16:33:06.451Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T16:33:06.602Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T16:33:06.869Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T16:33:06.969Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T16:33:07.086Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T16:33:07.129Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T16:33:07.156Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T16:33:07.217Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T16:33:25.611Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T16:33:25.619Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T16:33:32.965Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T16:33:32.975Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T16:33:32.981Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T16:33:32.994Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T16:33:33.000Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T16:33:33.017Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:40:44.287Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:40:44.304Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:40:44.400Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:40:44.470Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T17:40:44.482Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T17:40:44.498Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:40:44.506Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:40:44.522Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:40:47.543Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:40:47.572Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:40:47.578Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:40:47.614Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:40:49.083Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:40:49.091Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:40:51.841Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:40:51.854Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T17:40:51.861Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T17:40:51.880Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:40:52.891Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:40:52.902Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:40:52.907Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:40:52.920Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:43:47.961Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:43:47.974Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:43:59.365Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:43:59.378Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:43:59.386Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:43:59.401Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:44:04.010Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:44:04.019Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:45:46.005Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:45:46.026Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T17:45:55.637Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T17:45:55.653Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T17:46:11.962Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T17:46:11.972Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T17:46:42.507Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:46:42.797Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:46:42.811Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:46:42.830Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:46:42.909Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T17:46:42.933Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T17:46:42.982Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:46:43.004Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:46:43.025Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:46:45.083Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:46:45.101Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T17:46:45.124Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T17:46:45.154Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:46:46.293Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:46:46.336Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:46:46.368Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:46:46.777Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:46:48.373Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:46:48.452Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:46:54.987Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:46:55.005Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:46:55.014Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:46:55.030Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T17:47:03.635Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T17:47:03.645Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T17:47:08.715Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T17:47:08.730Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-17T17:47:40.204Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-17T17:47:40.215Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:47:46.065Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:47:46.102Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:47:46.131Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:47:46.149Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:47:46.174Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:47:46.289Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:47:48.642Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:47:48.656Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T17:47:48.665Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T17:47:48.685Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:47:48.693Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:47:48.707Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:47:50.858Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:47:50.870Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T17:47:50.878Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T17:47:50.894Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:47:52.835Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:47:52.846Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:47:52.853Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:47:52.863Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:47:54.634Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:47:54.648Z"}
+{"level":"info","message":"PUT /api/users/4","timestamp":"2025-04-17T17:49:43.942Z"}
+{"level":"info","message":"PUT /api/users/4","timestamp":"2025-04-17T17:49:50.078Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:50:24.197Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:50:24.202Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:50:24.236Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:50:24.415Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:50:26.204Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-17T17:50:26.219Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:50:26.225Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:50:26.237Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:50:27.254Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:50:27.266Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T17:50:27.276Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-17T17:50:27.292Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:50:28.779Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:50:28.790Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T17:50:28.797Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T17:50:28.811Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:50:28.818Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:50:28.829Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-17T17:50:46.813Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:50:47.047Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:50:47.051Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-17T17:50:47.062Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:50:47.069Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T17:50:47.077Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-17T17:50:47.103Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:50:47.136Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:50:47.147Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-04-17T17:51:45.600Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-04-17T17:52:07.015Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:52:07.305Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:52:07.343Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:52:07.357Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:52:07.364Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:52:07.384Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:52:07.411Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-17T17:52:07.450Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-17T17:52:07.474Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:52:27.536Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:52:27.850Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:52:29.812Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:52:30.144Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-17T17:52:32.363Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-17T17:52:32.382Z"}
+{"level":"info","message":"GET /api/permissions/approved","timestamp":"2025-04-17T17:52:34.366Z"}
+{"level":"info","message":"GET /api/permissions/rejected","timestamp":"2025-04-17T17:52:36.029Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-17T17:52:37.468Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:52:39.019Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-17T17:52:39.030Z"}
+{"level":"info","message":"PUT /api/users/5","timestamp":"2025-04-17T17:52:51.880Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:53:12.557Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:53:12.621Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:53:12.628Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:53:12.636Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-17T17:53:12.644Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-17T17:53:12.657Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:53:18.679Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:53:18.694Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:53:18.729Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:53:18.749Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:53:21.039Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:53:21.052Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:53:22.311Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:53:22.326Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:53:23.491Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:53:23.500Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:53:23.506Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:53:23.519Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-17T17:53:23.526Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-17T17:53:23.537Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-17T17:53:26.185Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-17T17:53:26.205Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:53:26.232Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:53:26.246Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:53:30.792Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-17T17:53:30.802Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:53:30.809Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-17T17:53:30.820Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-17T17:53:30.833Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-17T17:53:30.847Z"}
+{"level":"info","message":"POST /api/auth/register","timestamp":"2025-04-17T17:54:37.573Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-17T17:54:37.834Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:54:37.839Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-17T17:54:37.883Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-17T17:54:37.891Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-17T17:54:37.910Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:54:37.981Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-17T17:54:38.124Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-17T17:54:38.169Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-17T17:54:59.614Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-17T17:54:59.942Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-17T17:55:07.679Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:55:07.683Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:55:07.694Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-17T17:55:07.714Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-17T17:55:07.830Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-17T17:55:07.844Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-17T17:55:07.849Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-17T17:55:07.867Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-17T17:55:09.336Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-17T17:55:09.341Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-17T17:55:09.346Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-17T17:55:09.375Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-17T17:55:14.183Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-17T17:55:14.194Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-17T17:55:14.198Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-17T17:55:14.220Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:55:14.244Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:55:14.263Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:55:17.970Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-17T17:55:17.974Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:55:17.984Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-17T17:55:18.002Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-17T17:55:18.093Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-17T17:55:18.107Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-17T17:55:18.115Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-17T17:55:18.126Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-17T17:55:19.146Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-17T17:55:19.149Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-17T17:55:22.781Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-17T17:55:22.784Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-17T17:55:22.788Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-17T17:55:22.790Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-17T17:55:25.456Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-17T17:55:25.467Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-17T17:55:42.484Z"}
+{"level":"info","message":"POST /api/settings/backup","timestamp":"2025-04-17T17:56:02.282Z"}
+{"level":"info","message":"POST /api/settings/backup","timestamp":"2025-04-17T17:56:05.341Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-17T17:56:14.023Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-17T17:56:14.048Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-17T17:56:14.059Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-17T17:56:14.078Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-17T17:56:14.084Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-17T17:56:14.131Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-17T17:56:35.379Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-17T17:56:35.381Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-17T17:56:35.392Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-17T17:56:35.393Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:56:35.451Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-17T17:56:35.462Z"}
+{"level":"info","message":"GET /api/reports/courses","timestamp":"2025-04-17T17:56:42.961Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:09:22.098Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:09:22.105Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:09:42.316Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:09:42.350Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:09:42.469Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:09:42.514Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:09:42.588Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:09:42.610Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:09:42.633Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:09:42.656Z"}
+{"level":"info","message":"GET /main.f035843d145bc568371d.hot-update.json","timestamp":"2025-04-18T03:09:48.052Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:09:51.434Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:09:51.441Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:09:51.461Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:09:51.482Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:09:51.584Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:09:51.600Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:09:51.610Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:09:51.625Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:09:55.608Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:09:55.633Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:09:55.677Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:09:55.701Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:09:56.021Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:09:56.674Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:09:56.678Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:09:56.866Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:10:13.099Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:10:13.120Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:10:13.144Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:10:13.153Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:10:17.159Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:10:17.164Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:10:17.174Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:10:17.191Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:10:17.276Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:10:17.288Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:10:17.296Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:10:17.308Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:10:30.444Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:10:30.778Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:12:19.388Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:12:19.406Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:12:19.502Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:12:19.510Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:12:33.158Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:13:02.785Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:13:02.795Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:13:05.174Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:13:05.185Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:13:40.880Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:13:40.962Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:13:40.976Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:13:41.000Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:13:41.088Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:13:41.135Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:13:50.003Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:13:50.041Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:13:50.056Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:13:50.109Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:13:50.141Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:13:50.222Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:13:52.484Z"}
+{"level":"info","message":"GET /main.be0e9ec1ee68f761ceea.hot-update.json","timestamp":"2025-04-18T03:13:52.598Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:13:52.637Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:13:55.441Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:13:55.449Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:13:55.463Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:13:55.478Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:13:55.687Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:13:55.816Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:13:55.833Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:13:55.849Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:14:53.170Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:14:53.193Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:14:53.210Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:15:23.372Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:15:23.379Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:17:16.615Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:17:16.669Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:17:16.678Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:17:16.686Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T03:17:20.014Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T03:17:28.714Z"}
+{"level":"info","message":"GET /api/users?role=admin","timestamp":"2025-04-18T03:17:31.711Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:17:45.820Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T03:17:56.696Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:17:58.165Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:18:15.666Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:18:15.676Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T03:18:19.693Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T03:18:19.905Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:18:49.791Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:18:49.798Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:19:01.800Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:19:01.861Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:19:01.868Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:19:01.883Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:19:03.770Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T03:19:03.778Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:19:03.785Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T03:19:03.807Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:19:57.218Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:19:57.224Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:19:57.256Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:19:57.261Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:19:57.402Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:19:57.412Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:20:12.113Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:20:12.116Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:20:23.634Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:20:23.637Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:20:24.468Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:20:24.492Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T03:20:29.537Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T03:20:30.977Z"}
+{"level":"info","message":"GET /api/users?role=admin","timestamp":"2025-04-18T03:20:32.074Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T03:20:34.872Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:20:46.478Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:20:50.153Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:20:50.157Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:20:50.161Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:20:50.485Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:20:51.400Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:20:51.735Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T03:21:20.728Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:21:24.560Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:21:34.395Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:21:34.433Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:21:34.442Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:21:34.475Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:21:34.479Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:21:34.496Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:21:42.598Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:21:42.601Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:21:42.606Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:21:42.932Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T03:21:44.230Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T03:21:44.234Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:21:47.166Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:21:47.170Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:21:47.174Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:21:47.580Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:23:24.132Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:23:24.136Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:24:08.418Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:24:08.430Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:24:17.773Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:24:17.784Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:24:18.621Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:24:18.629Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:25:05.434Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:25:05.444Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:25:12.780Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:25:12.846Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:25:21.148Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:25:21.159Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:25:21.281Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:25:21.484Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:26:31.252Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:26:31.259Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:26:46.684Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:26:46.691Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:26:48.198Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:26:48.207Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:27:00.448Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:27:00.456Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:27:01.881Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:27:01.889Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:27:16.618Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:27:16.627Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:27:17.861Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:27:17.870Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:27:46.267Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:27:46.278Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:28:03.778Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:28:03.795Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:28:03.849Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:28:03.899Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:28:03.961Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:28:03.978Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T03:28:26.574Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T03:28:26.582Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T03:28:44.140Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:28:44.143Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T03:28:44.149Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:28:44.152Z"}
+{"level":"info","message":"GET /api/reports/courses","timestamp":"2025-04-18T03:28:49.361Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:28:53.595Z"}
+{"level":"info","message":"GET /api/reports/courses","timestamp":"2025-04-18T03:28:54.806Z"}
+{"level":"info","message":"GET /api/reports/permissions","timestamp":"2025-04-18T03:28:56.046Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T03:29:05.850Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T03:29:05.855Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:29:07.496Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:29:07.502Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:29:07.514Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:29:07.523Z"}
+{"level":"info","message":"POST /api/courses","timestamp":"2025-04-18T03:29:29.665Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:29:55.008Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:29:55.015Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:30:07.119Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:30:07.141Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:30:07.179Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:30:07.191Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:30:07.209Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:30:07.323Z"}
+{"level":"info","message":"POST /api/courses","timestamp":"2025-04-18T03:30:30.755Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T03:30:41.804Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:30:41.808Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T03:30:41.816Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:30:41.819Z"}
+{"level":"info","message":"GET /api/reports/courses","timestamp":"2025-04-18T03:30:49.324Z"}
+{"level":"info","message":"GET /api/reports/permissions","timestamp":"2025-04-18T03:30:51.290Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T03:31:00.297Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T03:31:00.308Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:36:48.857Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:36:48.866Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:36:59.683Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:36:59.691Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:37:03.010Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:37:03.017Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:37:36.649Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:37:36.657Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:37:40.357Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:37:40.366Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:37:55.275Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:37:55.282Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:37:58.820Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:37:58.828Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:38:18.230Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:38:18.244Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:38:40.531Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:38:40.539Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:38:46.413Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T03:38:46.479Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:38:46.487Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:38:46.507Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T03:38:46.589Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T03:38:46.626Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:38:51.591Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T03:38:51.612Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:38:53.382Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:38:53.388Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T03:38:53.484Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T03:38:53.712Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T03:38:55.182Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T03:38:55.189Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T03:38:57.367Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:38:57.371Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T03:38:57.477Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:38:57.494Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:39:24.139Z"}
+{"level":"info","message":"GET /api/reports/courses","timestamp":"2025-04-18T03:39:35.597Z"}
+{"level":"info","message":"GET /api/reports/permissions","timestamp":"2025-04-18T03:39:37.695Z"}
+{"level":"info","message":"GET /api/reports/courses","timestamp":"2025-04-18T03:39:41.811Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:39:47.826Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T03:39:51.865Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T03:39:51.896Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:40:47.187Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:40:47.196Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:40:48.540Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:40:48.546Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:41:02.044Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:41:02.053Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:41:04.095Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:41:04.104Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:43:04.309Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:43:04.320Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:43:05.831Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:43:05.841Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:43:08.391Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:43:08.401Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:43:25.525Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:43:25.531Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:43:27.904Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:43:27.911Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:43:57.033Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:44:54.270Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:44:54.281Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:45:04.975Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:45:04.985Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T03:46:01.054Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T03:46:01.130Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:46:01.203Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:46:01.219Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T03:46:01.548Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T03:46:01.570Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:46:26.995Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T03:46:27.000Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T03:46:27.103Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:46:27.131Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T03:46:29.468Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T03:46:29.472Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T03:46:30.756Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:46:30.758Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T03:46:30.774Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:46:30.791Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T03:46:36.312Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:46:36.315Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T03:46:36.331Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:46:36.342Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:46:36.393Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:46:36.403Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:46:49.529Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:46:49.536Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T03:46:55.316Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:46:55.327Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:46:55.407Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:46:55.431Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T03:46:55.484Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T03:46:55.551Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T03:47:25.440Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T03:47:25.769Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T03:47:25.775Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T03:47:25.800Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T03:48:22.973Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T03:48:33.947Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:48:37.048Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:48:37.058Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:48:51.693Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:48:51.702Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:49:05.446Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:49:05.454Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:49:06.925Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:49:06.933Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T03:49:10.749Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:49:58.386Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:49:58.395Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T03:50:43.157Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T03:50:43.195Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:50:43.217Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T03:50:43.223Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T03:50:43.234Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T03:50:43.679Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T03:50:43.747Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T03:50:43.760Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T03:51:34.285Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T03:51:34.294Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T04:00:07.985Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T04:00:08.654Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T04:00:09.013Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T04:00:09.027Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T04:00:09.036Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T04:00:09.414Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T04:00:09.509Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T04:00:09.670Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T04:02:45.050Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T09:39:13.897Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T09:39:13.907Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T09:40:43.446Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T09:40:43.462Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T09:40:46.744Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T09:40:46.753Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T09:40:51.259Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T09:40:51.269Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T09:41:14.999Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T09:41:15.013Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T09:41:38.274Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T09:41:38.282Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T09:41:44.886Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T09:41:44.894Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T09:41:55.281Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T09:41:55.295Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T09:42:15.453Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T09:42:15.491Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T09:42:15.574Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T09:42:15.581Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T09:42:15.588Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T09:42:15.940Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T09:42:15.973Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T09:42:16.043Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T09:43:39.679Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T09:43:41.209Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T09:43:41.451Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T09:44:26.609Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T09:44:26.712Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T09:44:26.741Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T09:44:26.789Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T09:44:26.804Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T09:44:26.824Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T09:44:29.516Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T09:44:29.550Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T09:44:39.886Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T09:44:40.003Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T09:44:40.198Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T09:44:40.219Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T09:44:54.250Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T09:44:54.261Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T09:44:58.040Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T09:44:58.044Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T09:44:58.176Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T09:44:58.190Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T09:44:58.246Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T09:44:58.263Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T09:55:59.416Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T09:55:59.538Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T09:55:59.547Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T09:55:59.572Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T09:55:59.694Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T09:55:59.741Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T09:56:09.897Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T09:56:09.932Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T09:56:34.685Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T09:56:34.705Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T09:56:34.763Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T09:56:34.790Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T09:56:37.914Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T09:56:37.920Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T09:56:37.943Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T09:56:38.081Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T09:56:52.579Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T09:56:52.585Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T09:56:54.739Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T09:56:54.743Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T09:56:54.896Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T09:56:54.902Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T09:56:54.913Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T09:56:54.927Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T09:57:11.156Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T09:57:11.175Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T09:57:11.412Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T09:57:11.490Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T09:57:11.742Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T09:57:11.759Z"}
+{"level":"info","message":"GET /admin/$%7B%7D/api/settings","timestamp":"2025-04-18T09:57:57.686Z"}
+{"level":"info","message":"GET /admin/undefined/api/settings","timestamp":"2025-04-18T09:58:08.756Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T09:58:33.638Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T09:58:33.680Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T09:58:33.721Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T09:58:50.129Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T09:58:50.397Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T09:58:52.156Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T09:58:56.428Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T09:58:56.462Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T09:58:56.479Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T09:59:03.388Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T09:59:03.408Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T09:59:03.426Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T09:59:10.909Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T09:59:11.124Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T09:59:11.184Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:00:31.480Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:00:31.505Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:00:31.520Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:03:26.647Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:03:26.725Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:03:27.108Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:03:27.168Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:03:27.220Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:03:27.235Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:03:27.242Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:03:27.251Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:04:44.650Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:04:44.662Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:04:44.717Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:04:44.724Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:04:44.732Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:04:44.757Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:04:44.891Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:04:44.902Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T10:04:58.489Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:05:31.876Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:05:31.906Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:05:31.940Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:05:31.964Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:05:31.977Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:05:32.066Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:05:32.201Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:05:32.259Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T10:08:31.380Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T10:08:31.573Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T10:08:31.584Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T10:08:31.612Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T10:08:31.791Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T10:08:31.926Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:08:36.120Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:08:36.145Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:08:36.254Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:08:36.283Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:08:50.449Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:08:50.503Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:08:50.665Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:08:50.719Z"}
+{"level":"info","message":"POST /api/users","timestamp":"2025-04-18T10:09:31.204Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:11:08.765Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:13:23.993Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T10:14:23.007Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T10:14:23.985Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:14:23.996Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:14:24.020Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T10:14:24.245Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T10:14:24.275Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T10:14:24.299Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T10:14:24.316Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T10:14:24.368Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:14:32.315Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:14:32.348Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:14:32.452Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:14:32.572Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T10:14:52.088Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T10:14:55.529Z"}
+{"level":"info","message":"GET /api/users?role=admin","timestamp":"2025-04-18T10:14:58.698Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:18:23.133Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T10:22:07.013Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T10:22:07.093Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T10:23:15.029Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T10:23:15.050Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:23:20.473Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:23:20.583Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:23:20.662Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:23:20.781Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T10:23:28.891Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:23:30.645Z"}
+{"level":"info","message":"DELETE /api/users/3","timestamp":"2025-04-18T10:23:51.990Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:23:52.087Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T10:24:00.971Z"}
+{"level":"info","message":"PUT /api/users/5","timestamp":"2025-04-18T10:24:14.894Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T10:24:15.291Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:24:29.065Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T10:24:30.540Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:24:32.067Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T10:25:55.967Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T10:25:56.983Z"}
+{"level":"info","message":"GET /api/users?role=admin","timestamp":"2025-04-18T10:25:57.826Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T10:26:09.704Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T10:26:11.417Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:26:12.694Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T10:26:22.695Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:26:27.116Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T10:26:28.803Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:26:48.177Z"}
+{"level":"info","message":"PUT /api/users/6","timestamp":"2025-04-18T10:27:31.116Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:27:31.423Z"}
+{"level":"info","message":"PUT /api/users/5","timestamp":"2025-04-18T10:28:38.163Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:28:38.645Z"}
+{"level":"info","message":"PUT /api/users/4","timestamp":"2025-04-18T10:29:55.798Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:29:56.126Z"}
+{"level":"info","message":"PUT /api/users/1","timestamp":"2025-04-18T10:31:04.625Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:31:05.014Z"}
+{"level":"info","message":"PUT /api/users/2","timestamp":"2025-04-18T10:31:50.770Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:31:51.034Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T10:31:56.786Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T10:31:58.317Z"}
+{"level":"info","message":"GET /api/users?role=admin","timestamp":"2025-04-18T10:31:59.677Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:32:01.557Z"}
+{"level":"info","message":"DELETE /api/users/1","timestamp":"2025-04-18T10:32:50.451Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:32:50.552Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T10:32:55.510Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T10:32:57.233Z"}
+{"level":"info","message":"GET /api/users?role=admin","timestamp":"2025-04-18T10:32:58.080Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T10:32:59.202Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T10:32:59.968Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:33:01.736Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:33:07.805Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:33:07.830Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:33:07.939Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:33:07.959Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T10:33:14.814Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T10:33:16.483Z"}
+{"level":"info","message":"GET /api/users?role=admin","timestamp":"2025-04-18T10:33:17.418Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:33:18.366Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T10:33:19.809Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T10:33:19.838Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T10:33:19.848Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T10:33:19.868Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T10:33:20.052Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T10:33:20.120Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T10:33:25.282Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T10:33:25.289Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T10:33:25.307Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T10:33:25.420Z"}
+{"level":"info","message":"POST /api/courses","timestamp":"2025-04-18T10:34:03.483Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T10:36:41.429Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T10:36:41.455Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T10:36:47.186Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T10:36:47.599Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:36:47.662Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:36:47.862Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T10:36:48.017Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T10:36:48.081Z"}
+{"level":"info","message":"POST /api/courses","timestamp":"2025-04-18T10:40:48.198Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T10:40:48.302Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:41:19.383Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:41:19.438Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T10:41:21.646Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T10:41:23.561Z"}
+{"level":"info","message":"GET /api/users?role=admin","timestamp":"2025-04-18T10:41:24.725Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T10:41:26.221Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T10:41:31.727Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T10:41:31.732Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T10:41:31.746Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T10:41:31.766Z"}
+{"level":"info","message":"POST /api/courses","timestamp":"2025-04-18T10:42:04.473Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T10:42:04.739Z"}
+{"level":"info","message":"PUT /api/courses/1","timestamp":"2025-04-18T10:42:15.171Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T10:42:15.278Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T10:42:52.309Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T10:42:52.318Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T10:42:53.694Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T10:42:53.699Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T10:42:54.008Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T10:42:54.026Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T10:42:54.042Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T10:42:54.208Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:43:02.676Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:43:02.690Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:43:02.702Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:43:02.778Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:43:02.820Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:43:02.856Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T10:43:14.250Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:43:21.557Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:43:21.587Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:43:21.752Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:43:21.781Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:43:21.804Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:43:21.963Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:43:22.285Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:43:22.310Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T10:47:08.978Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T10:47:09.003Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T10:48:23.653Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T10:48:23.669Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:48:32.045Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:48:32.176Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:48:32.279Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:48:32.511Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T10:50:50.430Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T10:50:50.446Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T10:50:59.518Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T10:50:59.540Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:51:06.390Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:51:06.500Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:51:06.532Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:51:06.667Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:51:06.832Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:51:06.857Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:51:06.875Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:51:06.962Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T10:51:49.480Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:51:57.437Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:51:57.461Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:51:57.588Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:51:57.604Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:51:57.724Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:51:57.757Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:51:57.962Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:51:57.980Z"}
+{"level":"info","message":"POST /api/settings/backup","timestamp":"2025-04-18T10:52:38.061Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T10:52:55.786Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T10:52:55.872Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T10:52:55.885Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T10:52:55.929Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T10:52:55.962Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T10:52:56.251Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:53:00.228Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:53:00.244Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:53:00.256Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:53:00.280Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:53:00.312Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:53:00.328Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T10:53:09.471Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:53:13.116Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:53:13.143Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:53:13.284Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:53:13.298Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:53:13.323Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:53:13.412Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:53:13.723Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:53:13.742Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T10:53:20.343Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:53:24.580Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T10:53:24.598Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:53:24.764Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:53:24.790Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T10:53:24.814Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T10:53:24.919Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:53:25.270Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T10:53:25.288Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T10:58:30.637Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T10:58:30.673Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T10:58:38.642Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T10:58:38.674Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T11:00:52.007Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T11:00:52.188Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T11:00:52.281Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T11:00:52.609Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T11:00:52.681Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T11:00:53.070Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T11:00:53.119Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T11:00:53.724Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T11:03:42.497Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T11:03:42.537Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T11:04:13.739Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T11:04:13.781Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T11:04:17.197Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T11:04:17.322Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T11:04:17.372Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T11:04:17.527Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T11:04:17.750Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T11:04:18.008Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T11:04:18.030Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T11:04:18.583Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T11:04:30.874Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T11:04:40.942Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T11:04:47.099Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T11:04:47.121Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T11:04:47.291Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T11:04:47.310Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T11:04:47.362Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T11:04:47.834Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T11:04:47.866Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T11:04:48.377Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T11:06:58.803Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T11:06:58.932Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T11:08:00.688Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T11:08:00.712Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T11:24:20.552Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T11:24:20.683Z"}
+{"level":"info","message":"PUT /api/users/4","timestamp":"2025-04-18T11:24:48.833Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T11:24:49.321Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T11:25:16.318Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T11:25:16.605Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T11:25:16.623Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T11:25:16.855Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T11:25:16.936Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T11:25:17.265Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T11:37:25.306Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T11:37:25.335Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T11:37:35.466Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T11:37:44.365Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T11:37:44.416Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T11:37:44.604Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T11:37:44.624Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T11:37:44.669Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T11:37:45.500Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T11:37:45.525Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T11:37:45.622Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T11:47:25.249Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T11:47:25.386Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T11:47:25.892Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T11:47:25.908Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T11:47:26.103Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T11:47:26.287Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T11:47:26.424Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T11:47:26.452Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T11:47:34.875Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T11:55:36.221Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T11:55:36.250Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T11:56:30.991Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T11:56:31.383Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T11:56:35.032Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T11:56:35.555Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T11:56:35.770Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T11:56:36.060Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T12:05:48.511Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T12:05:48.539Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T12:08:36.538Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T12:08:36.717Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T12:08:36.956Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T12:09:26.733Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T12:09:26.832Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:09:27.073Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T12:09:27.092Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:09:27.194Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T12:09:27.742Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T12:09:27.761Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T12:09:28.252Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T12:09:34.122Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T12:09:38.703Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T12:09:38.752Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:09:38.937Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T12:09:38.962Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:09:38.983Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T12:09:39.206Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T12:09:39.544Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T12:09:39.579Z"}
+{"level":"info","message":"PUT /api/settings","timestamp":"2025-04-18T12:10:05.107Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T12:10:10.192Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T12:10:10.222Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:10:10.361Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T12:10:10.384Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:10:10.398Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T12:10:10.530Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T12:10:10.790Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T12:10:10.808Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T12:10:34.988Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T12:10:35.015Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:10:37.892Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:10:37.960Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:10:37.972Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:10:37.996Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:10:38.004Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:10:38.031Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T12:10:42.067Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T12:10:42.076Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T12:10:42.109Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T12:10:42.315Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T12:10:46.298Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T12:10:46.302Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T12:10:46.437Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T12:10:46.459Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T12:10:46.474Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T12:10:46.548Z"}
+{"level":"info","message":"GET /api/reports/courses","timestamp":"2025-04-18T12:11:08.908Z"}
+{"level":"info","message":"GET /api/reports/permissions","timestamp":"2025-04-18T12:11:12.177Z"}
+{"level":"info","message":"GET /api/reports/courses","timestamp":"2025-04-18T12:11:24.010Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T12:11:26.816Z"}
+{"level":"info","message":"GET /api/reports/attendance?startDate=2025-04-01&endDate=2025-04-30","timestamp":"2025-04-18T12:11:43.764Z"}
+{"level":"info","message":"GET /api/reports/attendance?startDate=2025-04-01&endDate=2025-04-30","timestamp":"2025-04-18T12:11:57.437Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T12:12:27.100Z"}
+{"level":"info","message":"GET /api/reports/courses","timestamp":"2025-04-18T12:12:36.564Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T12:14:31.750Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T12:14:35.602Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T12:14:35.615Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T12:14:46.867Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T12:14:46.876Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T12:14:46.892Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T12:14:46.898Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T12:15:07.581Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T12:18:11.729Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T12:29:40.270Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:29:40.856Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:29:40.870Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:29:40.913Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:29:40.933Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:29:41.058Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:29:41.068Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:29:41.136Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:29:41.218Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T12:30:30.533Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:30:31.447Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:30:31.457Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:30:31.486Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:30:31.538Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:30:31.784Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:30:31.809Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:30:31.822Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:30:31.851Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T12:30:47.032Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:30:47.516Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:30:47.522Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:30:47.600Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:30:47.674Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:30:47.809Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:30:47.840Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:30:47.859Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:30:47.969Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T12:30:52.782Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:30:53.332Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:30:53.339Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:30:53.360Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:30:53.409Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:30:53.594Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:30:53.630Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:30:53.688Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:30:53.717Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T12:31:03.439Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:31:03.851Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:31:03.858Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:31:03.874Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:31:03.890Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:31:04.066Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:31:04.084Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:31:04.103Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:31:04.123Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T12:31:05.478Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T12:31:05.526Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T12:31:09.024Z"}
+{"level":"info","message":"GET /api/users?role=staff","timestamp":"2025-04-18T12:31:10.301Z"}
+{"level":"info","message":"GET /api/users?role=admin","timestamp":"2025-04-18T12:31:11.818Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T12:31:15.708Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T12:31:15.715Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T12:31:15.736Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T12:31:15.872Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T12:31:22.662Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T12:31:22.689Z"}
+{"level":"info","message":"GET /api/users?role=student","timestamp":"2025-04-18T12:31:24.120Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T12:31:29.473Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T12:31:29.478Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T12:31:29.493Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T12:31:29.499Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T12:31:31.491Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T12:31:31.493Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T12:31:31.613Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T12:31:31.622Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T12:31:31.703Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T12:31:31.721Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T12:31:34.974Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T12:31:35.072Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T12:31:35.081Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T12:31:35.179Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T12:31:35.189Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T12:31:35.205Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T12:40:24.696Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:40:25.730Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:40:25.749Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:40:25.769Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:40:26.005Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:40:26.069Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:40:26.103Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:40:26.124Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:40:26.173Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T12:40:31.703Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:40:32.260Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:40:32.269Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:40:32.301Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T12:40:32.335Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:40:32.530Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T12:40:32.553Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:40:32.573Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T12:40:32.608Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T12:41:14.334Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T12:41:14.387Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T12:41:55.186Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:41:55.612Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:41:55.623Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:41:55.637Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:41:55.878Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T12:41:55.893Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T12:41:55.913Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T12:41:55.923Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T12:41:55.956Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:02.553Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:02.568Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T12:42:02.577Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T12:42:02.603Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-18T12:42:04.792Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-18T12:42:04.808Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:04.814Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:04.830Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T12:42:06.589Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T12:42:06.610Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:09.274Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:09.289Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T12:42:09.300Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T12:42:09.321Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:10.811Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:10.823Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T12:42:10.831Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T12:42:10.846Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T12:42:10.854Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T12:42:10.871Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:17.786Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:17.801Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T12:42:17.811Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T12:42:17.830Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-18T12:42:24.548Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-18T12:42:24.571Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:24.582Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:24.605Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:49.134Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:49.191Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T12:42:49.202Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T12:42:49.222Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:52.842Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T12:42:52.856Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T12:42:52.865Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T12:42:52.884Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T12:42:52.897Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T12:42:52.962Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T12:43:03.399Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T12:43:03.416Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T12:44:46.075Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:44:46.673Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:44:46.690Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:44:46.729Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T12:44:46.747Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T12:44:46.788Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T12:44:46.817Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T12:44:46.852Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:44:47.075Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:44:52.672Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:44:52.705Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:45:10.457Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:45:10.527Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T12:45:14.779Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T12:45:14.821Z"}
+{"level":"info","message":"GET /api/permissions/approved","timestamp":"2025-04-18T12:45:17.519Z"}
+{"level":"info","message":"GET /api/permissions/rejected","timestamp":"2025-04-18T12:45:18.742Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T12:45:19.764Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T12:45:19.793Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:45:23.821Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:45:23.852Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T12:45:23.866Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T12:45:23.896Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T12:45:23.920Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T12:45:23.955Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:45:31.969Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:45:32.068Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:45:32.099Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:45:32.126Z"}
+{"level":"info","message":"POST /api/courses/undefined/materials","timestamp":"2025-04-18T12:46:22.820Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:46:33.982Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:46:33.992Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:46:34.021Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T12:46:34.049Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T12:46:34.071Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T12:46:34.087Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T12:46:34.116Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T12:46:34.307Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:46:36.430Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:46:36.467Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:46:47.146Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:46:47.486Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T12:46:50.219Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T12:46:50.275Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:46:53.788Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T12:46:53.803Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T12:46:53.811Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T12:46:53.828Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T12:46:53.851Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T12:46:53.887Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T13:25:16.656Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T13:25:16.708Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T13:57:38.073Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T13:57:38.087Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T14:11:28.991Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:11:29.544Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:11:29.556Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:11:29.573Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:11:29.660Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:11:29.675Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:11:29.695Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T14:11:29.704Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T14:11:29.735Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T14:11:46.266Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T14:11:46.278Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:11:48.100Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:11:48.110Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:11:48.119Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:11:48.130Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T14:11:48.139Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T14:11:48.154Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T14:11:59.223Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:11:59.483Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:11:59.489Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:11:59.500Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:11:59.504Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T14:11:59.537Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T14:11:59.553Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:11:59.561Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:11:59.574Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T14:12:03.014Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T14:12:03.039Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T14:12:11.864Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T14:12:12.093Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:12:12.098Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:12:12.108Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T14:12:12.127Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T14:12:12.169Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T14:12:12.184Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T14:12:12.196Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T14:12:12.206Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T14:12:21.732Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T14:12:21.914Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T14:12:21.921Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T14:12:21.977Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T14:12:21.982Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T14:12:21.992Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T14:12:26.274Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T14:12:26.295Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T14:12:26.303Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T14:12:26.318Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T14:12:26.323Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T14:12:26.391Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-18T14:40:08.781Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-18T14:40:08.794Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T14:40:12.542Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:40:12.583Z"}
+{"level":"info","message":"GET /api/analytics/stats","timestamp":"2025-04-18T14:40:12.730Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T14:40:12.746Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:40:12.759Z"}
+{"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-18T14:40:12.897Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T14:40:12.910Z"}
+{"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-18T14:40:12.929Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T14:40:37.058Z"}
+{"level":"info","message":"GET /api/users?role=all","timestamp":"2025-04-18T14:40:37.088Z"}
+{"level":"info","message":"GET /api/users?role=admin","timestamp":"2025-04-18T14:40:39.837Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T14:40:46.289Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T14:40:46.294Z"}
+{"level":"info","message":"GET /api/users/staff/all","timestamp":"2025-04-18T14:40:46.306Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T14:40:46.391Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T14:40:53.233Z"}
+{"level":"info","message":"GET /api/locations","timestamp":"2025-04-18T14:40:53.242Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T14:40:55.828Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T14:40:55.831Z"}
+{"level":"info","message":"GET /api/departments","timestamp":"2025-04-18T14:40:55.938Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T14:40:55.946Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T14:40:55.954Z"}
+{"level":"info","message":"GET /api/courses","timestamp":"2025-04-18T14:40:56.017Z"}
+{"level":"info","message":"GET /api/reports/courses","timestamp":"2025-04-18T14:41:07.735Z"}
+{"level":"info","message":"GET /api/reports/attendance","timestamp":"2025-04-18T14:41:08.732Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T14:41:10.754Z"}
+{"level":"info","message":"GET /api/settings","timestamp":"2025-04-18T14:41:10.837Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T14:41:10.845Z"}
+{"level":"info","message":"GET /api/settings/system-info","timestamp":"2025-04-18T14:41:10.936Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T14:41:10.948Z"}
+{"level":"info","message":"GET /api/settings/backup-history","timestamp":"2025-04-18T14:41:10.965Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T14:41:21.277Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:41:21.647Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:41:21.654Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:41:21.672Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:41:21.680Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T14:41:21.728Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T14:41:21.761Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:41:21.772Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:41:21.786Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:41:55.371Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:41:55.377Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:41:55.399Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:41:55.411Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T14:41:55.426Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T14:41:55.486Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:41:55.544Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:41:55.577Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:41:58.927Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:41:58.934Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:41:58.952Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:41:58.970Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T14:41:58.993Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T14:41:59.033Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:41:59.091Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:41:59.104Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:42:45.932Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:42:45.946Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T14:42:45.958Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T14:42:45.981Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-18T14:42:49.455Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-18T14:42:49.467Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:42:49.473Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:42:49.523Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T14:42:51.143Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T14:42:51.173Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-18T14:42:52.981Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-18T14:42:52.996Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:42:53.009Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:42:53.038Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:43:40.004Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:43:40.015Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T14:43:40.023Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T14:43:40.049Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T14:43:43.884Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T14:43:43.896Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-18T14:43:45.591Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-18T14:43:45.604Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:43:45.615Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:43:45.640Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:44:01.420Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:44:01.439Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T14:44:01.447Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T14:44:01.467Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:44:01.476Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:44:01.498Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:44:02.744Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:44:02.756Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T14:44:02.765Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T14:44:02.807Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-18T14:44:04.380Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-18T14:44:04.393Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:44:04.399Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:44:04.419Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-18T14:44:09.657Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:44:09.664Z"}
+{"level":"info","message":"GET /api/permissions/student","timestamp":"2025-04-18T14:44:09.677Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:44:09.686Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:44:09.700Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:44:09.751Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:44:12.576Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:44:12.589Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T14:44:12.600Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T14:44:12.626Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:44:13.554Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:44:13.567Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T14:44:13.577Z"}
+{"level":"info","message":"GET /api/attendance/summary","timestamp":"2025-04-18T14:44:13.593Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:44:13.601Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:44:13.619Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T14:44:32.363Z"}
+{"level":"info","message":"GET /api/users/profile","timestamp":"2025-04-18T14:44:32.384Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:44:34.457Z"}
+{"level":"info","message":"GET /api/courses/student","timestamp":"2025-04-18T14:44:34.469Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T14:44:34.481Z"}
+{"level":"info","message":"GET /api/attendance/student","timestamp":"2025-04-18T14:44:34.499Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-04-18T14:44:44.793Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:44:45.111Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:44:45.117Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:44:45.144Z"}
+{"level":"info","message":"GET /api/auth/me","timestamp":"2025-04-18T14:44:45.154Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:44:45.159Z"}
+{"level":"info","message":"GET /api/courses/upcoming","timestamp":"2025-04-18T14:44:45.230Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T14:44:45.281Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T14:44:45.315Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:44:49.453Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:44:49.482Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:44:51.394Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:44:51.453Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T14:44:52.384Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T14:44:52.404Z"}
+{"level":"info","message":"GET /api/permissions/approved","timestamp":"2025-04-18T14:44:55.366Z"}
+{"level":"info","message":"GET /api/permissions/rejected","timestamp":"2025-04-18T14:44:57.607Z"}
+{"level":"info","message":"GET /api/permissions/pending","timestamp":"2025-04-18T14:44:58.987Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:45:03.059Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:45:03.097Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:45:20.264Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:45:20.371Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:45:23.959Z"}
+{"level":"info","message":"GET /api/courses/staff","timestamp":"2025-04-18T14:45:23.997Z"}

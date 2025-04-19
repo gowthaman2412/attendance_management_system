@@ -1,0 +1,145 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                  Int             @id @default(autoincrement())
+  name                String
+  email               String          @unique
+  password            String
+  role                String
+  studentId           String?         // Added field
+  staffId             String?         // Added field
+  department          String?
+  deviceToken         String?
+  lastActive          DateTime?
+  resetPasswordToken  String?
+  resetPasswordExpire DateTime?
+  createdAt           DateTime        @default(now())
+  updatedAt           DateTime        @updatedAt
+  attendances         Attendance[]
+  verifiedAttendances Attendance[]    @relation("AttendanceVerifier")
+  courses             Course[]        @relation("CourseInstructor")
+  enrolledCourses     CourseStudent[]
+  permissions         Permission[]
+  reviewedPermissions Permission[]    @relation("PermissionReviewer")
+}
+
+model Course {
+  id           Int      @id @default(autoincrement())
+  name         String
+  code         String   @unique
+  description  String?
+  instructorId Int
+  department   String
+  credits      Int      @default(3)
+  semester     String
+  year         Int
+  active       Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  instructor  User             @relation("CourseInstructor", fields: [instructorId], references: [id])
+  students    CourseStudent[]
+  attendances Attendance[]
+  schedules   CourseSchedule[]
+  Permission  Permission[]
+}
+
+model CourseStudent {
+  id         Int      @id @default(autoincrement())
+  courseId   Int
+  userId     Int
+  enrolledAt DateTime @default(now())
+
+  course Course @relation(fields: [courseId], references: [id])
+  user   User   @relation(fields: [userId], references: [id])
+
+  @@unique([courseId, userId])
+}
+
+model CourseSchedule {
+  id                  Int      @id @default(autoincrement())
+  courseId            Int
+  day                 String
+  startTime           String
+  endTime             String
+  building            String
+  room                String
+  locationCoordinates Json // Changed from Unsupported("geometry(Point,4326)")
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  course Course @relation(fields: [courseId], references: [id])
+}
+
+model Attendance {
+  id                 Int       @id @default(autoincrement())
+  userId             Int
+  courseId           Int
+  date               DateTime  @default(now())
+  status             String
+  checkInTime        DateTime?
+  checkOutTime       DateTime?
+  location           Json
+  verificationMethod String    @default("geolocation")
+  verifiedById       Int?
+  notes              String?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+
+  user     User   @relation(fields: [userId], references: [id])
+  course   Course @relation(fields: [courseId], references: [id])
+  verifier User?  @relation("AttendanceVerifier", fields: [verifiedById], references: [id])
+
+  @@index([userId, courseId, date])
+}
+
+model Permission {
+  id           Int       @id @default(autoincrement())
+  userId       Int
+  courseId     Int
+  type         String // enum in application logic: 'absence', 'late', 'early-leave'
+  reason       String    @db.Text
+  startDate    DateTime
+  endDate      DateTime
+  status       String    @default("pending") // enum in application logic: 'pending', 'approved', 'rejected'
+  reviewedById Int?
+  reviewDate   DateTime?
+  reviewNotes  String?   @db.Text
+  attachments  Json? // Store array of attachment objects as JSON
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  user     User   @relation(fields: [userId], references: [id])
+  course   Course @relation(fields: [courseId], references: [id])
+  reviewer User?  @relation("PermissionReviewer", fields: [reviewedById], references: [id])
+
+  @@index([userId, status])
+  @@index([courseId, status])
+  @@index([startDate, endDate])
+}
+
+model Settings {
+  id                          Int     @id @default(autoincrement())
+  attendanceCheckInWindow     Int     @default(15)
+  attendanceGeoFencingRadius  Int     @default(100)
+  attendanceRequirePhoto      Boolean @default(false)
+  systemTheme                 String  @default("light")
+  systemName                  String  @default("Attendance Management System")
+  academicYear                String  @default("")
+  semester                    String  @default("")
+  defaultAttendanceStatus     String  @default("absent")
+  backupFrequency             String  @default("daily")
+  emailNotifications          Boolean @default(false)
+  attendanceReminders         Boolean @default(false)
+  autoBackup                  Boolean @default(false)
+  maintenanceMode             Boolean @default(false)
+  createdAt                   DateTime @default(now())
+  updatedAt                   DateTime @updatedAt
+}
