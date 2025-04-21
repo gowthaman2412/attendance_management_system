@@ -8,35 +8,39 @@ datasource db {
 }
 
 model User {
-  id                  Int             @id @default(autoincrement())
+  id                  Int              @id @default(autoincrement())
   name                String
-  email               String          @unique
+  email               String           @unique
   password            String
   role                String
-  studentId           String?         // Added field
-  staffId             String?         // Added field
+  studentId           String? // Added field
+  staffId             String? // Added field
   department          String?
   deviceToken         String?
   lastActive          DateTime?
   resetPasswordToken  String?
   resetPasswordExpire DateTime?
-  createdAt           DateTime        @default(now())
-  updatedAt           DateTime        @updatedAt
+  phone               String?
+  address             String?
+  specialization      String?
+  createdAt           DateTime         @default(now())
+  updatedAt           DateTime         @updatedAt
   attendances         Attendance[]
-  verifiedAttendances Attendance[]    @relation("AttendanceVerifier")
-  courses             Course[]        @relation("CourseInstructor")
+  verifiedAttendances Attendance[]     @relation("AttendanceVerifier")
+  courses             Course[]         @relation("CourseInstructor")
   enrolledCourses     CourseStudent[]
   permissions         Permission[]
-  reviewedPermissions Permission[]    @relation("PermissionReviewer")
+  reviewedPermissions Permission[]     @relation("PermissionReviewer")
+  CourseMaterial      CourseMaterial[]
 }
 
 model Course {
+  departmentId Int?
   id           Int      @id @default(autoincrement())
   name         String
   code         String   @unique
   description  String?
   instructorId Int
-  department   String
   credits      Int      @default(3)
   semester     String
   year         Int
@@ -44,18 +48,22 @@ model Course {
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
-  instructor  User             @relation("CourseInstructor", fields: [instructorId], references: [id])
-  students    CourseStudent[]
-  attendances Attendance[]
-  schedules   CourseSchedule[]
-  Permission  Permission[]
+  instructor     User             @relation("CourseInstructor", fields: [instructorId], references: [id])
+  department     Department?      @relation(fields: [departmentId], references: [id])
+  students       CourseStudent[]
+  attendances    Attendance[]
+  schedules      CourseSchedule[]
+  Permission     Permission[]
+  CourseMaterial CourseMaterial[]
 }
 
 model CourseStudent {
-  id         Int      @id @default(autoincrement())
-  courseId   Int
-  userId     Int
-  enrolledAt DateTime @default(now())
+  id           Int         @id @default(autoincrement())
+  courseId     Int
+  userId       Int
+  departmentId Int?
+  enrolledAt   DateTime    @default(now())
+  department   Department? @relation(fields: [departmentId], references: [id])
 
   course Course @relation(fields: [courseId], references: [id])
   user   User   @relation(fields: [userId], references: [id])
@@ -125,21 +133,44 @@ model Permission {
   @@index([startDate, endDate])
 }
 
+model Department {
+  id            Int             @id @default(autoincrement())
+  name          String          @unique
+  code          String          @unique
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+  courses       Course[]
+  CourseStudent CourseStudent[]
+}
+
 model Settings {
-  id                          Int     @id @default(autoincrement())
-  attendanceCheckInWindow     Int     @default(15)
-  attendanceGeoFencingRadius  Int     @default(100)
-  attendanceRequirePhoto      Boolean @default(false)
-  systemTheme                 String  @default("light")
-  systemName                  String  @default("Attendance Management System")
-  academicYear                String  @default("")
-  semester                    String  @default("")
-  defaultAttendanceStatus     String  @default("absent")
-  backupFrequency             String  @default("daily")
-  emailNotifications          Boolean @default(false)
-  attendanceReminders         Boolean @default(false)
-  autoBackup                  Boolean @default(false)
-  maintenanceMode             Boolean @default(false)
-  createdAt                   DateTime @default(now())
-  updatedAt                   DateTime @updatedAt
+  id                         Int      @id @default(autoincrement())
+  attendanceCheckInWindow    Int      @default(15)
+  attendanceGeoFencingRadius Int      @default(100)
+  attendanceRequirePhoto     Boolean  @default(false)
+  systemTheme                String   @default("light")
+  systemName                 String   @default("Attendance Management System")
+  academicYear               String   @default("")
+  semester                   String   @default("")
+  defaultAttendanceStatus    String   @default("absent")
+  backupFrequency            String   @default("daily")
+  emailNotifications         Boolean  @default(false)
+  attendanceReminders        Boolean  @default(false)
+  autoBackup                 Boolean  @default(false)
+  maintenanceMode            Boolean  @default(false)
+  createdAt                  DateTime @default(now())
+  updatedAt                  DateTime @updatedAt
+}
+
+model CourseMaterial {
+  id           Int      @id @default(autoincrement())
+  courseId     Int
+  title        String
+  description  String?
+  link         String
+  uploadedById Int
+  createdAt    DateTime @default(now())
+
+  course     Course @relation(fields: [courseId], references: [id])
+  uploadedBy User   @relation(fields: [uploadedById], references: [id])
 }

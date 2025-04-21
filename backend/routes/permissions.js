@@ -7,21 +7,29 @@ const prisma = require('../prisma/client');
 // @route   POST api/permissions
 // @desc    Create a new permission request
 // @access  Private (Student)
-router.post('/', [
-  auth,
-  check('courseId', 'Course ID is required').not().isEmpty(),
-  check('type', 'Permission type is required').isIn(['absence', 'late', 'early-leave']),
-  check('reason', 'Reason is required').not().isEmpty(),
-  check('startDate', 'Start date is required').isISO8601(),
-  check('endDate', 'End date is required').isISO8601()
-], async (req, res) => {
-  // Validate request
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    return res.status(400).json({ errors: errors.array() });
-  }
-
+router.post('/', auth, async (req, res) => {
   try {
+    // Support both JSON and formData
+    let body = req.body;
+    console.log("body:",body)
+    // If formData, fields may not be parsed as expected, so use req.body directly
+    // Normalize all possible field names and trim values
+    const courseId = body.course || body.courseId || body['courseId'] || body['course'];
+    const type = body.type || body['type'];
+    const reason = body.reason || body['reason'];
+    const startDate = body.startDate || body.date || body['startDate'] || body['date'];
+    const endDate = body.endDate || body.date || body['endDate'] || body['date'];
+    // Validate required fields
+    const errors = [];
+    if (!courseId) errors.push({ type: 'field', msg: 'Course ID is required', path: 'courseId', location: 'body' });
+    if (!type) errors.push({ type: 'field', msg: 'Permission type is required', path: 'type', location: 'body' });
+    if (!reason) errors.push({ type: 'field', msg: 'Reason is required', path: 'reason', location: 'body' });
+    if (!startDate) errors.push({ type: 'field', msg: 'Start date is required', path: 'startDate', location: 'body' });
+    if (!endDate) errors.push({ type: 'field', msg: 'End date is required', path: 'endDate', location: 'body' });
+    if (errors.length > 0) {
+      return res.status(400).json({ errors });
+    }
+
     // Check if user is a student
     const user = await prisma.user.findUnique({
       where: { id: parseInt(req.user.id) }
@@ -31,8 +39,6 @@ router.post('/', [
       return res.status(403).json({ msg: 'Only students can create permission requests' });
     }
 
-    const { courseId, type, reason, startDate, endDate } = req.body;
-    
     // Check if course exists
     const course = await prisma.course.findUnique({
       where: { id: parseInt(courseId) }

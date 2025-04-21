@@ -13,28 +13,18 @@ import {
   CircularProgress,
   Alert,
   Snackbar,
-  // Card,
-  // CardContent,
   List,
   ListItem,
   ListItemText,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogActions,
-  // IconButton
 } from '@mui/material';
 import {
   Save as SaveIcon,
-  Backup as BackupIcon,
-  // Refresh as RefreshIcon,
-  // Close as CloseIcon
 } from '@mui/icons-material';
 import axios from 'axios';
 
 const AdminSettings = () => {
   const [settings, setSettings] = useState({
-    systemName: 'AIMS - Attendance & Information Management System',
+    systemName: 'AMS - Attendance & Information Management System',
     emailNotifications: false,
     autoBackup: false,
     backupFrequency: 'daily',
@@ -53,12 +43,8 @@ const AdminSettings = () => {
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
-  const [openBackupDialog, setOpenBackupDialog] = useState(false);
-  const [backupNote, setBackupNote] = useState('');
-  const [backupHistory, setBackupHistory] = useState([]);
   const [systemInfo, setSystemInfo] = useState({
     version: '1.0.0',
-    lastBackup: 'Never',
     serverStatus: 'Online',
     databaseStatus: 'Connected',
     totalUsers: 0,
@@ -82,10 +68,6 @@ const AdminSettings = () => {
         // Fetch system info
         const infoRes = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/settings/system-info`);
         setSystemInfo(infoRes.data);
-        
-        // Fetch backup history
-        const backupRes = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/settings/backup-history`);
-        setBackupHistory(backupRes.data);
         
       } catch (err) {
         console.error('Error fetching settings:', err);
@@ -126,46 +108,6 @@ const AdminSettings = () => {
     } catch (err) {
       console.error('Error saving settings:', err);
       setError('Failed to save settings. Please try again.');
-    } finally {
-      setSaving(false);
-    }
-  };
-
-  const handleOpenBackupDialog = () => {
-    setOpenBackupDialog(true);
-    setBackupNote('');
-  };
-
-  const handleCloseBackupDialog = () => {
-    setOpenBackupDialog(false);
-  };
-
-  const handleBackupNoteChange = (e) => {
-    setBackupNote(e.target.value);
-  };
-
-  const handleCreateBackup = async () => {
-    try {
-      setSaving(true);
-      setError(null);
-      
-      await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/settings/backup`, { note: backupNote });
-      
-      // Refresh backup history
-      const backupRes = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/settings/backup-history`);
-      setBackupHistory(backupRes.data);
-      
-      // Refresh system info to update last backup time
-      const infoRes = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/settings/system-info`);
-      setSystemInfo(infoRes.data);
-      
-      setSuccess(true);
-      setTimeout(() => setSuccess(false), 3000);
-      handleCloseBackupDialog();
-      
-    } catch (err) {
-      console.error('Error creating backup:', err);
-      setError('Failed to create backup. Please try again.');
     } finally {
       setSaving(false);
     }
@@ -232,7 +174,7 @@ const AdminSettings = () => {
                 <TextField
                   fullWidth
                   select
-                  // label="Semester"
+                  label="Semester"
                   name="semester"
                   value={settings.semester}
                   onChange={handleChange}
@@ -242,9 +184,14 @@ const AdminSettings = () => {
                   }}
                 >
                   <option value="">Select Semester</option>
-                  <option value="Fall">Fall</option>
-                  <option value="Spring">Spring</option>
-                  <option value="Summer">Summer</option>
+                  <option value="I">I</option>
+                  <option value="II">II</option>
+                  <option value="III">III</option>
+                  <option value="IV">IV</option>
+                  <option value="V">V</option>
+                  <option value="VI">VI</option>
+                  <option value="VII">VII</option>
+                  <option value="VIII">VIII</option>
                 </TextField>
               </Grid>
               
@@ -267,7 +214,7 @@ const AdminSettings = () => {
                 </TextField>
               </Grid>
               
-              <Grid item xs={12} sm={6}>
+              {/* <Grid item xs={12} sm={6}>
                 <TextField
                   fullWidth
                   select
@@ -284,9 +231,9 @@ const AdminSettings = () => {
                   <option value="weekly">Weekly</option>
                   <option value="monthly">Monthly</option>
                 </TextField>
-              </Grid>
+              </Grid> */}
               
-              <Grid item xs={12}>
+              {/* <Grid item xs={12}>
                 <FormControlLabel
                   control={
                     <Switch
@@ -344,7 +291,7 @@ const AdminSettings = () => {
                   }
                   label="Maintenance Mode (Restricts User Access)"
                 />
-              </Grid>
+              </Grid> */}
               
               <Grid item xs={12}>
                 <Box sx={{ display: 'flex', justifyContent: 'flex-end', mt: 2 }}>
@@ -382,9 +329,6 @@ const AdminSettings = () => {
                 <ListItemText primary="Database Status" secondary={systemInfo.databaseStatus} />
               </ListItem>
               <ListItem>
-                <ListItemText primary="Last Backup" secondary={systemInfo.lastBackup} />
-              </ListItem>
-              <ListItem>
                 <ListItemText primary="Total Users" secondary={systemInfo.totalUsers} />
               </ListItem>
               <ListItem>
@@ -394,80 +338,9 @@ const AdminSettings = () => {
                 <ListItemText primary="Disk Usage" secondary={systemInfo.diskSpace} />
               </ListItem>
             </List>
-            <Box sx={{ mt: 2, display: 'flex', justifyContent: 'center' }}>
-              <Button
-                variant="outlined"
-                startIcon={<BackupIcon />}
-                onClick={handleOpenBackupDialog}
-                disabled={saving}
-              >
-                Create Manual Backup
-              </Button>
-            </Box>
-          </Paper>
-          
-          {/* Backup History */}
-          <Paper elevation={3} sx={{ p: 3 }}>
-            <Typography variant="h6" gutterBottom>
-              Backup History
-            </Typography>
-            <Divider sx={{ mb: 2 }} />
-            
-            <List dense>
-              {backupHistory.length > 0 ? (
-                backupHistory.map((backup, index) => (
-                  <ListItem key={index}>
-                    <ListItemText 
-                      primary={new Date(backup.date).toLocaleString()} 
-                      secondary={backup.note || 'No notes'} 
-                    />
-                  </ListItem>
-                ))
-              ) : (
-                <ListItem>
-                  <ListItemText primary="No backup history found" />
-                </ListItem>
-              )}
-            </List>
           </Paper>
         </Grid>
       </Grid>
-      
-      {/* Backup Dialog */}
-      <Dialog open={openBackupDialog} onClose={handleCloseBackupDialog}>
-        <DialogTitle>Create System Backup</DialogTitle>
-        <DialogContent>
-          <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-            This will create a backup of all system data including users, courses, and attendance records.
-          </Typography>
-          <TextField
-            autoFocus
-            margin="dense"
-            id="backup-note"
-            label="Backup Note (Optional)"
-            type="text"
-            fullWidth
-            multiline
-            rows={3}
-            value={backupNote}
-            onChange={handleBackupNoteChange}
-            disabled={saving}
-          />
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleCloseBackupDialog} disabled={saving}>
-            Cancel
-          </Button>
-          <Button 
-            onClick={handleCreateBackup} 
-            variant="contained" 
-            color="primary"
-            disabled={saving}
-          >
-            {saving ? <CircularProgress size={24} /> : 'Create Backup'}
-          </Button>
-        </DialogActions>
-      </Dialog>
       
       {/* Success Snackbar */}
       <Snackbar

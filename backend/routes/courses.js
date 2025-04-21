@@ -23,6 +23,7 @@ router.get('/', auth, async (req, res) => {
             email: true
           }
         },
+        department: true, // Ensure department is included
         students: {
           include: {
             user: {
@@ -45,7 +46,7 @@ router.get('/', auth, async (req, res) => {
       id: course.id,
       name: course.name,
       code: course.code,
-      department: course.department,
+      department: course.department, // Add department to response
       credits: course.credits,
       instructor: course.instructor,
       students: course.students.map(enrollment => enrollment.user)
@@ -75,16 +76,18 @@ router.post('/', auth, async (req, res) => {
       return res.status(400).json({ msg: 'Name, code, and department are required fields' });
     }
     
+    // Prepare courseData for creation
     const courseData = {
       name,
       code,
-      department,
       credits: credits ? parseInt(credits) : 3,
       semester,
       year
     };
-    
-    // If instructor is provided, add to course data
+    // Use departmentId for relation
+    if (department && !isNaN(parseInt(department))) {
+      courseData.departmentId = parseInt(department);
+    }
     if (instructor) {
       try {
         courseData.instructorId = parseInt(instructor);
@@ -138,28 +141,24 @@ router.put('/:id', auth, async (req, res) => {
     const courseData = {};
     if (name) courseData.name = name;
     if (code) courseData.code = code;
-    if (department) courseData.department = department;
     if (credits) courseData.credits = parseInt(credits);
-    
+    // Only update department if a valid department ID is provided
+    if (department && !isNaN(parseInt(department))) {
+      courseData.department = { connect: { id: parseInt(department) } };
+    }
     // Handle instructor assignment
     if (instructor === '') {
-      // Remove instructor assignment
-      courseData.instructorId = null;
+      courseData.instructor = { disconnect: true };
     } else if (instructor) {
-      // Assign new instructor
-      try {
-        courseData.instructorId = parseInt(instructor);
-      } catch (error) {
-        console.error('Error parsing instructor ID:', error);
-        return res.status(400).json({ msg: 'Invalid instructor ID format' });
-      }
+      courseData.instructor = { connect: { id: parseInt(instructor) } };
     }
     
     const course = await prisma.course.update({
       where: { id: courseId },
       data: courseData,
       include: {
-        instructor: true
+        instructor: true,
+        department: true
       }
     });
     
@@ -232,18 +231,34 @@ router.get('/student', auth, async (req, res) => {
       where: {
         students: {
           some: {
-            id: req.user.id
+            userId: parseInt(req.user.id)
           }
         }
       },
-      select: {
-        id: true,
-        name: true,
-        code: true,
-        department: true
+      include: {
+        department: true,
+        instructor: {
+          select: { id: true, name: true, email: true }
+        },
+        students: {
+          include: {
+            user: {
+              select: { id: true, name: true, email: true, studentId: true }
+            }
+          }
+        }
       }
     });
-    res.json(courses);
+    // Format response for UI
+    const formattedCourses = courses.map(course => ({
+      id: course.id,
+      name: course.name,
+      code: course.code,
+      department: course.department,
+      instructor: course.instructor,
+      students: course.students.map(enrollment => enrollment.user)
+    }));
+    res.json(formattedCourses);
   } catch (err) {
     console.error('Error fetching student courses:', err);
     res.status(500).json({ msg: 'Server error fetching student courses' });
@@ -302,9 +317,9 @@ router.get('/upcoming', auth, async (req, res) => {
       .filter(course => course.schedules.length > 0) // Only courses with schedule today
       .flatMap(course => {
         return course.schedules.map(scheduleItem => ({
-          _id: `${course.id}_${scheduleItem.id}`, // Create a unique ID
+          id: `${course.id}_${scheduleItem.id}`, // Create a unique ID
           course: {
-            _id: course.id,
+            id: course.id,
             name: course.name,
             code: course.code,
             students: course.students || []
@@ -341,42 +356,132 @@ router.get('/staff', auth, async (req, res) => {
     if (req.user.role !== 'staff') {
       return res.status(403).json({ msg: 'Only staff can access their assigned courses' });
     }
-    
     // Find all courses where the staff is the instructor
     const courses = await prisma.course.findMany({
       where: {
         instructorId: parseInt(req.user.id)
       },
       include: {
+        department: true,
+        schedules: true,
         students: {
           include: {
             user: {
               select: {
                 id: true,
-                name: true
+                name: true,
+                email: true,
+                studentId: true
               }
             }
           }
         }
       }
     });
-    
     // Transform data to format expected by frontend
     const formattedCourses = courses.map(course => ({
       id: course.id,
       name: course.name,
       code: course.code,
       description: course.description,
-      department: course.department,
+      department: course.department?.name || '',
       semester: course.semester,
       year: course.year,
+      credits: course.credits,
+      schedule: course.schedules,
       students: course.students.map(enrollment => enrollment.user)
     }));
-    
     res.json(formattedCourses);
   } catch (err) {
     console.error('Error fetching staff courses:', err);
     res.status(500).json({ msg: 'Server error fetching staff courses' });
+  }
+});
+
+// @route   GET api/courses/:id
+// @desc    Get course by ID
+// @access  Private (Admin, Staff, Student)
+router.get('/:id', auth, async (req, res) => {
+  try {
+    const courseId = parseInt(req.params.id);
+    if (isNaN(courseId)) {
+      return res.status(400).json({ msg: 'Invalid course ID format' });
+    }
+    const course = await prisma.course.findUnique({
+      where: { id: courseId },
+      include: {
+        instructor: {
+          select: { id: true, name: true, email: true }
+        },
+        department: true,
+        students: {
+          include: {
+            user: {
+              select: {
+                id: true,
+                name: true,
+                email: true,
+                studentId: true,
+                department: true
+              }
+            }
+          }
+        }
+      }
+    });
+    if (!course) {
+      return res.status(404).json({ msg: 'Course not found' });
+    }
+    // Format students as array of user objects
+    const formattedCourse = {
+      ...course,
+      name:course.students.map(enrollment => enrollment.user.name),
+      studentId:course.students.map(enrollment => enrollment.user.studentId),
+      students: course.students.map(enrollment => enrollment.user)
+    };
+    res.json(formattedCourse);
+  } catch (err) {
+    console.error('Error fetching course by ID:', err);
+    res.status(500).send('Server error');
+  }
+});
+
+// @route   POST api/courses/:id/materials
+// @desc    Add material to a course
+// @access  Private (Staff/Admin)
+router.post('/:id/materials', auth, async (req, res) => {
+  try {
+    const courseId = parseInt(req.params.id);
+    if (isNaN(courseId)) {
+      return res.status(400).json({ msg: 'Invalid course ID format' });
+    }
+    const { title, description, link } = req.body;
+    if (!title || !link) {
+      return res.status(400).json({ msg: 'Title and link are required' });
+    }
+    // Only staff (instructor) or admin can add materials
+    const user = await prisma.user.findUnique({ where: { id: parseInt(req.user.id) } });
+    const course = await prisma.course.findUnique({ where: { id: courseId } });
+    if (!course) {
+      return res.status(404).json({ msg: 'Course not found' });
+    }
+    if (user.role === 'staff' && course.instructorId !== user.id) {
+      return res.status(403).json({ msg: 'Not authorized to add materials to this course' });
+    }
+    // Create material (assuming a CourseMaterial model exists)
+    const material = await prisma.courseMaterial.create({
+      data: {
+        courseId,
+        title,
+        description,
+        link,
+        uploadedById: user.id
+      }
+    });
+    res.json(material);
+  } catch (err) {
+    console.error('Error adding course material:', err);
+    res.status(500).send('Server error');
   }
 });
 

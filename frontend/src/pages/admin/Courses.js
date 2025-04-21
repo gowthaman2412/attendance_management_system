@@ -39,6 +39,7 @@ import axios from 'axios';
 const AdminCourses = () => {
   const [courses, setCourses] = useState([]);
   const [staff, setStaff] = useState([]);
+  const [departments, setDepartments] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
@@ -59,6 +60,7 @@ const AdminCourses = () => {
   useEffect(() => {
     fetchCourses();
     fetchStaff();
+    fetchDepartments();
   }, []);
 
   const fetchCourses = async () => {
@@ -86,6 +88,15 @@ const AdminCourses = () => {
     }
   };
 
+  const fetchDepartments = async () => {
+    try {
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/departments`);
+      setDepartments(res.data);
+    } catch (err) {
+      console.error('Error fetching departments:', err);
+    }
+  };
+
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
   };
@@ -106,9 +117,9 @@ const AdminCourses = () => {
     setFormData({
       name: course.name || '',
       code: course.code || '',
-      department: course.department || '',
+      department: course.department?.id || course.department?.id || course.department || '',
       credits: course.credits || 3,
-      instructor: course.instructor?.id || course.instructor?._id || course.instructorId || ''
+      instructor: course.instructor?.id || course.instructor?.id || course.instructorId || ''
     });
     setOpenEditDialog(true);
   };
@@ -144,7 +155,8 @@ const AdminCourses = () => {
       setLoading(true);
       setError(null);
       
-      await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/courses`, formData);
+      const payload = { ...formData, department: formData.department };
+      await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/courses`, payload);
       
       setSuccess('Course added successfully');
       setTimeout(() => setSuccess(null), 3000);
@@ -165,9 +177,9 @@ const AdminCourses = () => {
       setLoading(true);
       setError(null);
       
-      // Use either id or _id for compatibility with both formats
-      const courseId = selectedCourse.id || selectedCourse._id;
-      await axios.put(`${process.env.REACT_APP_API_BASE_URL}/api/courses/${courseId}`, formData);
+      const courseId = selectedCourse.id || selectedCourse.id;
+      const payload = { ...formData, department: formData.department };
+      await axios.put(`${process.env.REACT_APP_API_BASE_URL}/api/courses/${courseId}`, payload);
       
       setSuccess('Course updated successfully');
       setTimeout(() => setSuccess(null), 3000);
@@ -188,8 +200,7 @@ const AdminCourses = () => {
       setLoading(true);
       setError(null);
       
-      // Use either id or _id for compatibility with both formats
-      const courseId = selectedCourse.id || selectedCourse._id;
+      const courseId = selectedCourse.id || selectedCourse.id;
       await axios.delete(`${process.env.REACT_APP_API_BASE_URL}/api/courses/${courseId}`);
       
       setSuccess('Course deleted successfully');
@@ -210,7 +221,7 @@ const AdminCourses = () => {
     return (
       course.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
       course.code?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      course.department?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      course.department?.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
       course.instructor?.name?.toLowerCase().includes(searchTerm.toLowerCase())
     );
   });
@@ -282,10 +293,10 @@ const AdminCourses = () => {
             </TableHead>
             <TableBody>
               {filteredCourses.map((course) => (
-                <TableRow key={course.id || course._id}>
+                <TableRow key={course.id || course.id}>
                   <TableCell>{course.code}</TableCell>
                   <TableCell>{course.name}</TableCell>
-                  <TableCell>{course.department}</TableCell>
+                  <TableCell>{course.department?.name || course.department || ''}</TableCell>
                   <TableCell>{course.instructor?.name || 'Not Assigned'}</TableCell>
                   <TableCell>{course.credits}</TableCell>
                   <TableCell>
@@ -359,14 +370,22 @@ const AdminCourses = () => {
               />
             </Grid>
             <Grid item xs={12} sm={6}>
-              <TextField
-                fullWidth
-                label="Department"
-                name="department"
-                value={formData.department}
-                onChange={handleFormChange}
-                required
-              />
+              <FormControl fullWidth required>
+                <InputLabel id="department-label">Department</InputLabel>
+                <Select
+                  labelId="department-label"
+                  id="department"
+                  name="department"
+                  value={formData.department}
+                  label="Department"
+                  onChange={handleFormChange}
+                >
+                  <MenuItem value="">Select Department</MenuItem>
+                  {departments.map((dept) => (
+                    <MenuItem key={dept.id} value={dept.id}>{dept.name}</MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
             </Grid>
             <Grid item xs={12} sm={6}>
               <TextField
@@ -393,7 +412,7 @@ const AdminCourses = () => {
                 >
                   <MenuItem value="">Not Assigned</MenuItem>
                   {staff.map((staffMember) => (
-                    <MenuItem key={staffMember.id || staffMember._id} value={staffMember.id || staffMember._id}>
+                    <MenuItem key={staffMember.id || staffMember.id} value={staffMember.id || staffMember.id}>
                       {staffMember.name}
                     </MenuItem>
                   ))}
@@ -448,14 +467,22 @@ const AdminCourses = () => {
               />
             </Grid>
             <Grid item xs={12} sm={6}>
-              <TextField
-                fullWidth
-                label="Department"
-                name="department"
-                value={formData.department}
-                onChange={handleFormChange}
-                required
-              />
+              <FormControl fullWidth required>
+                <InputLabel id="department-edit-label">Department</InputLabel>
+                <Select
+                  labelId="department-edit-label"
+                  id="department"
+                  name="department"
+                  value={formData.department}
+                  label="Department"
+                  onChange={handleFormChange}
+                >
+                  <MenuItem value="">Select Department</MenuItem>
+                  {departments.map((dept) => (
+                    <MenuItem key={dept.id} value={dept.id}>{dept.name}</MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
             </Grid>
             <Grid item xs={12} sm={6}>
               <TextField
@@ -482,7 +509,7 @@ const AdminCourses = () => {
                 >
                   <MenuItem value="">Not Assigned</MenuItem>
                   {staff.map((staffMember) => (
-                    <MenuItem key={staffMember.id || staffMember._id} value={staffMember.id || staffMember._id}>
+                    <MenuItem key={staffMember.id || staffMember.id} value={staffMember.id || staffMember.id}>
                       {staffMember.name}
                     </MenuItem>
                   ))}
@@ -557,7 +584,7 @@ const AdminCourses = () => {
                 </TableHead>
                 <TableBody>
                   {selectedCourse.students.map((student) => (
-                    <TableRow key={student.id || student._id}>
+                    <TableRow key={student.id || student.id}>
                       <TableCell>{student.studentId}</TableCell>
                       <TableCell>{student.name}</TableCell>
                       <TableCell>{student.email}</TableCell>

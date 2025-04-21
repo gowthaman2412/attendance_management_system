@@ -100,7 +100,7 @@ const StaffPermissions = () => {
       setLoading(true);
       setError(null);
       
-      await axios.put(`${process.env.REACT_APP_API_BASE_URL}/api/permissions/${selectedPermission._id}`, {
+      await axios.put(`${process.env.REACT_APP_API_BASE_URL}/api/permissions/${selectedPermission.id}`, {
         status: responseAction,
         staffNote: responseNote
       });
@@ -181,7 +181,7 @@ const StaffPermissions = () => {
             </TableHead>
             <TableBody>
               {permissions.map((permission) => (
-                <TableRow key={permission._id}>
+                <TableRow key={permission.id}>
                   <TableCell>{permission.student?.name || 'Unknown'}</TableCell>
                   <TableCell>{permission.type}</TableCell>
                   <TableCell>{formatDate(permission.date)}</TableCell>
@@ -249,11 +249,11 @@ const StaffPermissions = () => {
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
                 <Typography variant="subtitle2">Student:</Typography>
-                <Typography variant="body1">{selectedPermission.student?.name}</Typography>
+                <Typography variant="body1">{selectedPermission.user?.name}</Typography>
               </Grid>
               <Grid item xs={12} sm={6}>
                 <Typography variant="subtitle2">Student ID:</Typography>
-                <Typography variant="body1">{selectedPermission.student?.studentId}</Typography>
+                <Typography variant="body1">{selectedPermission.user?.studentId}</Typography>
               </Grid>
               <Grid item xs={12} sm={6}>
                 <Typography variant="subtitle2">Type:</Typography>
@@ -261,7 +261,7 @@ const StaffPermissions = () => {
               </Grid>
               <Grid item xs={12} sm={6}>
                 <Typography variant="subtitle2">Date:</Typography>
-                <Typography variant="body1">{formatDate(selectedPermission.date)}</Typography>
+                <Typography variant="body1">{ (selectedPermission.startDate!=selectedPermission.endDate) ? (`${formatDate(selectedPermission.startDate)} to ${formatDate(selectedPermission.endDate)}`) : (`${formatDate(selectedPermission.endDate)}`) }</Typography>
               </Grid>
               <Grid item xs={12} sm={6}>
                 <Typography variant="subtitle2">Status:</Typography>

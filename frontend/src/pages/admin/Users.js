@@ -60,6 +60,7 @@ const AdminUsers = () => {
     staffId: '',
     department: ''
   });
+  const [departments, setDepartments] = useState([]);
 
   const fetchUsers = useCallback(async () => {
     try {
@@ -91,6 +92,18 @@ const AdminUsers = () => {
   useEffect(() => {
     fetchUsers();
   }, [fetchUsers]);
+
+  useEffect(() => {
+    const fetchDepartments = async () => {
+      try {
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/departments`);
+        setDepartments(res.data);
+      } catch (err) {
+        console.error('Error fetching departments:', err);
+      }
+    };
+    fetchDepartments();
+  }, []);
 
   const handleTabChange = (event, newValue) => {
     setTabValue(newValue);
@@ -183,7 +196,7 @@ const AdminUsers = () => {
         delete updateData.password;
       }
       
-      const userId = selectedUser.id || selectedUser._id;
+      const userId = selectedUser.id || selectedUser.id;
       await axios.put(`${process.env.REACT_APP_API_BASE_URL}/api/users/${userId}`, updateData);
       
       setSuccess('User updated successfully');
@@ -205,7 +218,7 @@ const AdminUsers = () => {
       setLoading(true);
       setError(null);
       
-      const userId = selectedUser.id || selectedUser._id;
+      const userId = selectedUser.id || selectedUser.id;
       await axios.delete(`${process.env.REACT_APP_API_BASE_URL}/api/users/${userId}`);
       
       setSuccess('User deleted successfully');
@@ -319,7 +332,7 @@ const AdminUsers = () => {
             </TableHead>
             <TableBody>
               {filteredUsers.map(user => (
-                <TableRow key={user.id || user._id}>
+                <TableRow key={user.id || user.id}>
                   <TableCell>{user.name}</TableCell>
                   <TableCell>{user.email}</TableCell>
                   <TableCell>{user.role === 'student' ? user.studentId : user.staffId}</TableCell>
@@ -427,13 +440,22 @@ const AdminUsers = () => {
               </FormControl>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <TextField
-                fullWidth
-                label="Department"
-                name="department"
-                value={formData.department}
-                onChange={handleFormChange}
-              />
+              <FormControl fullWidth required>
+                <InputLabel id="department-label">Department</InputLabel>
+                <Select
+                  labelId="department-label"
+                  id="department"
+                  name="department"
+                  value={formData.department}
+                  label="Department"
+                  onChange={handleFormChange}
+                >
+                  <MenuItem value="">Select Department</MenuItem>
+                  {departments.map((dept) => (
+                    <MenuItem key={dept.id} value={dept.name}>{dept.name}</MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
             </Grid>
             {formData.role === 'student' && (
               <Grid item xs={12} sm={6}>
@@ -547,13 +569,22 @@ const AdminUsers = () => {
               </FormControl>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <TextField
-                fullWidth
-                label="Department"
-                name="department"
-                value={formData.department}
-                onChange={handleFormChange}
-              />
+              <FormControl fullWidth required>
+                <InputLabel id="department-label">Department</InputLabel>
+                <Select
+                  labelId="department-label"
+                  id="department"
+                  name="department"
+                  value={formData.department}
+                  label="Department"
+                  onChange={handleFormChange}
+                >
+                  <MenuItem value="">Select Department</MenuItem>
+                  {departments.map((dept) => (
+                    <MenuItem key={dept.id} value={dept.name}>{dept.name}</MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
             </Grid>
             {formData.role === 'student' && (
               <Grid item xs={12} sm={6}>

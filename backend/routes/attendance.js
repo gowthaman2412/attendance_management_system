@@ -300,7 +300,8 @@ router.get('/student', auth, async (req, res) => {
     const attendance = await prisma.attendance.findMany({
       where,
       include: {
-        course: true
+        course: { include: { department: true } },
+        user: true // Remove department from include, as it's a scalar
       },
       orderBy: { date: 'desc' }
     });
@@ -362,15 +363,8 @@ router.get('/course/:courseId', auth, async (req, res) => {
     const attendance = await prisma.attendance.findMany({
       where,
       include: {
-        user: {
-          select: {
-            id: true,
-            name: true, 
-            email: true,
-            studentId: true
-          }
-        },
-        course: true
+        course: { include: { department: true } },
+        user: { include: { department: true } }
       },
       orderBy: { date: 'desc' }
     });
@@ -378,6 +372,89 @@ router.get('/course/:courseId', auth, async (req, res) => {
     res.json(attendance);
   } catch (err) {
     console.error('Error getting course attendance:', err.message);
+    res.status(500).send('Server error');
+  }
+});
+
+// @route   GET api/attendance/:courseId/:date
+// @desc    Get attendance records for a course on a specific date
+// @access  Private (Staff/Admin)
+router.get('/:courseId/:date', auth, async (req, res) => {
+  try {
+    const { courseId, date } = req.params;
+    // Check if user is staff or admin
+    const user = await prisma.user.findUnique({
+      where: { id: parseInt(req.user.id) }
+    });
+    if (!user || (user.role !== 'staff' && user.role !== 'admin')) {
+      return res.status(403).json({ msg: 'Access denied' });
+    }
+    // Check if course exists
+    const course = await prisma.course.findUnique({
+      where: { id: parseInt(courseId) }
+    });
+    if (!course) {
+      return res.status(404).json({ msg: 'Course not found' });
+    }
+    // Check if staff is the instructor of the course or an admin
+    if (user.role === 'staff' && course.instructorId !== parseInt(req.user.id)) {
+      return res.status(403).json({ msg: 'Not authorized to view this course attendance' });
+    }
+    // Find attendance records for the course on the given date
+    const queryDate = new Date(date);
+    queryDate.setHours(0, 0, 0, 0);
+    const nextDay = new Date(queryDate);
+    nextDay.setDate(nextDay.getDate() + 1);
+    // Get all students enrolled in the course
+    const courseWithStudents = await prisma.course.findUnique({
+      where: { id: parseInt(courseId) },
+      include: {
+        students: {
+          include: {
+            user: {
+              select: {
+                id: true,
+                name: true,
+                studentId: true,
+                email: true,
+                department: true
+              }
+            }
+          }
+        }
+      }
+    });
+    // Get attendance records for the course/date
+    const attendance = await prisma.attendance.findMany({
+      where: {
+        courseId: parseInt(courseId),
+        date: {
+          gte: queryDate,
+          lt: nextDay
+        }
+      }
+    });
+    // Map attendance by userId for quick lookup
+    const attendanceMap = {};
+    attendance.forEach(a => { attendanceMap[a.userId] = a; });
+    // Build response: for each student, include their details and attendance (if any)
+    const response = courseWithStudents.students.map(enrollment => {
+      const user = enrollment.user;
+      const att = attendanceMap[user.id];
+      return {
+        id: user.id,
+        name: user.name,
+        studentId: user.studentId,
+        email: user.email,
+        department: user.department,
+        status: att ? att.status : 'absent',
+        note: att ? att.notes : '',
+        attendanceId: att ? att.id : null
+      };
+    });
+    res.json(response);
+  } catch (err) {
+    console.error('Error fetching attendance for course/date:', err);
     res.status(500).send('Server error');
   }
 });
@@ -617,6 +694,78 @@ router.get('/summary', auth, async (req, res) => {
     });
   } catch (err) {
     console.error('Error getting attendance summary:', err.message);
+    res.status(500).send('Server error');
+  }
+});
+
+// @route   POST api/attendance/bulk
+// @desc    Bulk create or update attendance records
+// @access  Private (Staff/Admin)
+router.post('/bulk', auth, async (req, res) => {
+  try {
+    const { attendance } = req.body;
+    if (!Array.isArray(attendance) || attendance.length === 0) {
+      return res.status(400).json({ msg: 'Attendance array is required' });
+    }
+    // Only staff or admin can use this endpoint
+    const user = await prisma.user.findUnique({ where: { id: parseInt(req.user.id) } });
+    if (!user || (user.role !== 'staff' && user.role !== 'admin')) {
+      return res.status(403).json({ msg: 'Access denied' });
+    }
+    const results = [];
+    for (const record of attendance) {
+      const { student, course, date, status, note } = record;
+      if (!student || !course || !date || !status) continue;
+      // Support both student ID (number) and studentId (string)
+      let userObj = null;
+      if (typeof student === 'string' && isNaN(Number(student))) {
+        // If student is a string but not a number, skip
+        continue;
+      }
+      if (typeof student === 'string' && student.length > 0 && isNaN(Number(student)) === false) {
+        // If student is a string of digits, treat as studentId
+        userObj = await prisma.user.findFirst({ where: { studentId: student, role: 'student' } });
+      } else if (!isNaN(Number(student))) {
+        // If student is a number, treat as userId
+        userObj = await prisma.user.findUnique({ where: { id: parseInt(student) } });
+      }
+      if (!userObj) continue;
+      // Find existing attendance for this student/course/date
+      const start = new Date(date);
+      start.setHours(0, 0, 0, 0);
+      const end = new Date(start);
+      end.setDate(end.getDate() + 1);
+      let att = await prisma.attendance.findFirst({
+        where: {
+          userId: userObj.id,
+          courseId: parseInt(course),
+          date: { gte: start, lt: end }
+        }
+      });
+      if (att) {
+        // Update
+        att = await prisma.attendance.update({
+          where: { id: att.id },
+          data: { status, notes: note || undefined }
+        });
+      } else {
+        // Create
+        att = await prisma.attendance.create({
+          data: {
+            userId: userObj.id,
+            courseId: parseInt(course),
+            date: new Date(date),
+            status,
+            notes: note || undefined,
+            location: {} // Provide empty object if location is not supplied
+          }
+        });
+      }
+      results.push(att);
+    }
+    res.json({ success: true, results });
+  } catch (err) {
+    console.error('Error in bulk attendance:', err);
     res.status(500).send('Server error');
   }
 });

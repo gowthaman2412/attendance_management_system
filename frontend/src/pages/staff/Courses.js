@@ -91,13 +91,19 @@ const StaffCourses = () => {
 
   const handleSubmitMaterial = async () => {
     try {
-      await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/courses/${selectedCourse._id}/materials`, materialData);
-      
-      // Refresh courses data
-      const res = await axios.get('/api/courses/staff');
-      setCourses(res.data);
-      
-      handleCloseAddMaterialDialog();
+      if (selectedCourse && (selectedCourse.id || selectedCourse.id)) {
+        const courseId = selectedCourse.id || selectedCourse.id;
+        await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/courses/${courseId}/materials`, materialData);
+        
+        // Refresh courses data
+        const res = await axios.get('/api/courses/staff');
+        setCourses(res.data);
+        
+        handleCloseAddMaterialDialog();
+      } else {
+        // Handle error: course not selected
+        alert('Please select a valid course before adding materials.');
+      }
     } catch (err) {
       console.error('Error adding course material:', err);
       setError('Failed to add course material. Please try again.');
@@ -137,7 +143,7 @@ const StaffCourses = () => {
       ) : (
         <Grid container spacing={3}>
           {courses.map((course) => (
-            <Grid item xs={12} md={6} key={course._id}>
+            <Grid item xs={12} md={6} key={course.id}>
               <Card elevation={3}>
                 <CardContent>
                   <Typography variant="h5" component="div">
@@ -158,9 +164,9 @@ const StaffCourses = () => {
                   </Typography>
                   
                   <Box sx={{ mt: 2 }}>
-                    <Typography variant="subtitle2" gutterBottom>
+                    {/* <Typography variant="subtitle2" gutterBottom>
                       Schedule:
-                    </Typography>
+                    </Typography> */}
                     {course.schedule?.map((scheduleItem, index) => (
                       <Chip 
                         key={index}
@@ -207,7 +213,7 @@ const StaffCourses = () => {
           {selectedCourse?.students?.length > 0 ? (
             <List>
               {selectedCourse.students.map((student) => (
-                <React.Fragment key={student._id}>
+                <React.Fragment key={student.id}>
                   <ListItem>
                     <ListItemText
                       primary={student.name}

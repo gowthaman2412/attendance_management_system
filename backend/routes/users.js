@@ -22,6 +22,9 @@ router.get('/profile', auth, async (req, res) => {
         studentId: true,
         staffId: true,
         department: true,
+        phone: true,
+        address: true,
+        specialization: true,
         createdAt: true,
         lastActive: true
       }
@@ -37,6 +40,8 @@ router.get('/profile', auth, async (req, res) => {
     res.status(500).send('Server error');
   }
 });
+
+// 
 
 // @route   GET api/users/students/all
 // @desc    Get all students
@@ -251,6 +256,55 @@ router.get('/', auth, async (req, res) => {
   }
 });
 
+// @route   POST api/users
+// @desc    Create a new user (admin only)
+// @access  Private (Admin)
+router.post('/', auth, async (req, res) => {
+  try {
+    if (req.user.role !== 'admin') {
+      return res.status(403).json({ msg: 'Access denied. Admin only.' });
+    }
+    const { name, email, password, role, studentId, staffId, department } = req.body;
+    if (!name || !email || !password || !role) {
+      return res.status(400).json({ msg: 'Name, email, password, and role are required' });
+    }
+    // Check if user exists
+    const existingUser = await prisma.user.findUnique({ where: { email } });
+    if (existingUser) {
+      return res.status(400).json({ msg: 'User already exists' });
+    }
+    // Hash password
+    const bcrypt = require('bcryptjs');
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(password, salt);
+    // Create user
+    const user = await prisma.user.create({
+      data: {
+        name,
+        email,
+        password: hashedPassword,
+        role,
+        studentId: role === 'student' ? studentId : null,
+        staffId: role === 'staff' || role === 'admin' ? staffId : null,
+        department
+      }
+    });
+    res.json({
+      id: user.id,
+      name: user.name,
+      email: user.email,
+      role: user.role,
+      studentId: user.studentId,
+      staffId: user.staffId,
+      department: user.department,
+      createdAt: user.createdAt
+    });
+  } catch (err) {
+    console.error('Error creating user:', err);
+    res.status(500).send('Server error');
+  }
+});
+
 // @route   GET api/users/:id
 // @desc    Get user by ID
 // @access  Private (Admin or Self)
@@ -298,13 +352,26 @@ router.get('/:id', auth, async (req, res) => {
 // @access  Private (Admin or Self)
 router.put('/:id', [
   auth,
-  check('name', 'Name is required').not().isEmpty(),
-  check('email', 'Please include a valid email').isEmail()
 ], async (req, res) => {
-  // Validate request
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    return res.status(400).json({ errors: errors.array() });
+  // Fix: For multipart/form-data, use req.body.get if available, else fallback to req.body
+  let name, email;
+  if (req.is('multipart/form-data') && req.body.get) {
+    name = req.body.get('name');
+    email = req.body.get('email');
+  } else {
+    name = req.body.name;
+    email = req.body.email;
+  }
+  // If email is not provided, try to fetch from DB for validation
+  if (!email) {
+    const user = await prisma.user.findUnique({ where: { id: parseInt(req.params.id) } });
+    email = user?.email;
+  }
+  if (!name || !email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+    return res.status(400).json({ errors: [
+      { type: 'field', msg: 'Name is required', path: 'name', location: 'body' },
+      { type: 'field', msg: 'Please include a valid email', path: 'email', location: 'body' }
+    ] });
   }
 
   try {
@@ -315,7 +382,7 @@ router.put('/:id', [
       return res.status(403).json({ msg: 'Access denied' });
     }
 
-    const { name, email, department, profileImage, password } = req.body;
+    const { department, profileImage, password, phone, address, specialization } = req.body;
     
     // Find user
     const user = await prisma.user.findUnique({
@@ -342,9 +409,11 @@ router.put('/:id', [
       name,
       email
     };
-    
     if (department) updateData.department = department;
     if (profileImage) updateData.profileImage = profileImage;
+    if (phone) updateData.phone = phone;
+    if (address) updateData.address = address;
+    if (specialization) updateData.specialization = specialization;
     
     // Update password if provided
     if (password) {

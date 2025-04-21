@@ -5,324 +5,126 @@ const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
 // @route   GET api/reports/attendance
-// @desc    Get attendance reports
+// @desc    Attendance report for admin
 // @access  Private (Admin)
 router.get('/attendance', auth, async (req, res) => {
   try {
-    // Check if user is admin
     if (req.user.role !== 'admin') {
       return res.status(403).json({ msg: 'Access denied. Admin only.' });
     }
-
-    const { period = 'week', department } = req.query;
-    
-    // Get start date based on period
-    const startDate = new Date();
-    if (period === 'week') {
-      startDate.setDate(startDate.getDate() - 7);
-    } else if (period === 'month') {
-      startDate.setMonth(startDate.getMonth() - 1);
-    } else if (period === 'year') {
-      startDate.setFullYear(startDate.getFullYear() - 1);
-    }
-
+    const { department, course, startDate, endDate } = req.query;
     // Build query
-    let whereClause = {
-      date: {
-        gte: startDate
-      }
-    };
-
-    // Add department filter if provided
+    const where = {};
     if (department) {
-      whereClause.course = {
-        department
+      where['course'] = { departmentId: parseInt(department) };
+    }
+    if (course) {
+      where['courseId'] = parseInt(course);
+    }
+    if (startDate && endDate) {
+      where['date'] = {
+        gte: new Date(startDate),
+        lte: new Date(endDate)
       };
     }
-
-    try {
-      // Get attendance data
-      const attendanceData = await prisma.attendance.findMany({
-        where: whereClause,
-        include: {
-          course: {
-            select: {
-              name: true,
-              code: true,
-              department: true
-            }
-          },
-          user: {
-            select: {
-              name: true,
-              studentId: true,
-              department: true
-            }
-          }
-        },
-        orderBy: {
-          date: 'desc'
-        }
-      });
-
-      // Group by date
-      const groupedByDate = {};
-      attendanceData.forEach(record => {
-        const dateStr = record.date.toISOString().split('T')[0];
-        if (!groupedByDate[dateStr]) {
-          groupedByDate[dateStr] = [];
-        }
-        groupedByDate[dateStr].push(record);
-      });
-
-      // Calculate totals for each day
-      const dailyTotals = Object.keys(groupedByDate).map(date => {
-        const records = groupedByDate[date];
-        const totalAttendance = records.length;
-        const presentCount = records.filter(r => r.status === 'present').length;
-        const absentCount = records.filter(r => r.status === 'absent').length;
-        const lateCount = records.filter(r => r.status === 'late').length;
-        
-        return {
-          date,
-          totalAttendance,
-          presentCount,
-          absentCount,
-          lateCount,
-          presentPercentage: totalAttendance ? Math.round((presentCount / totalAttendance) * 100) : 0
-        };
-      });
-
-      // Sort by date (oldest first)
-      dailyTotals.sort((a, b) => new Date(a.date) - new Date(b.date));
-
-      res.json({
-        period,
-        dailyTotals,
-        summary: {
-          totalRecords: attendanceData.length,
-          totalPresent: attendanceData.filter(r => r.status === 'present').length,
-          totalAbsent: attendanceData.filter(r => r.status === 'absent').length,
-          totalLate: attendanceData.filter(r => r.status === 'late').length
-        }
-      });
-    } catch (dbError) {
-      console.error('Database error in attendance report:', dbError);
-      // Return sample data as fallback
-      res.json({
-        period,
-        dailyTotals: [],
-        summary: {
-          totalRecords: 0,
-          totalPresent: 0,
-          totalAbsent: 0,
-          totalLate: 0
-        }
-      });
-    }
+    // Get attendance records
+    const attendanceRecords = await prisma.attendance.findMany({
+      where,
+      include: { course: true }
+    });
+    // Calculate overall stats
+    const overallStats = {
+      present: attendanceRecords.filter(r => r.status === 'present').length,
+      late: attendanceRecords.filter(r => r.status === 'late').length,
+      absent: attendanceRecords.filter(r => r.status === 'absent').length,
+      excused: attendanceRecords.filter(r => r.status === 'excused').length
+    };
+    // Calculate course stats
+    const courseStatsMap = {};
+    attendanceRecords.forEach(r => {
+      const code = r.course?.code || 'Unknown';
+      if (!courseStatsMap[code]) {
+        courseStatsMap[code] = { code, present: 0, late: 0, absent: 0, excused: 0 };
+      }
+      courseStatsMap[code][r.status]++;
+    });
+    const courseStats = Object.values(courseStatsMap);
+    res.json({ overallStats, courseStats });
   } catch (err) {
-    console.error('Error generating attendance report:', err);
-    res.status(500).send('Server error');
+    console.error('Error fetching attendance report:', err);
+    res.status(500).json({ msg: 'Server error fetching attendance report' });
   }
 });
 
 // @route   GET api/reports/courses
-// @desc    Get course enrollment reports
+// @desc    Course report for admin
 // @access  Private (Admin)
 router.get('/courses', auth, async (req, res) => {
   try {
-    // Check if user is admin
     if (req.user.role !== 'admin') {
       return res.status(403).json({ msg: 'Access denied. Admin only.' });
     }
-
     const { department } = req.query;
-    
-    // Build query
-    let whereClause = {};
-    
-    // Add department filter if provided
+    const where = {};
     if (department) {
-      whereClause.department = department;
+      where.departmentId = parseInt(department);
     }
-
-    try {
-      // Get courses with student counts
-      const courses = await prisma.course.findMany({
-        where: whereClause,
-        include: {
-          _count: {
-            select: {
-              students: true
-            }
-          },
-          instructor: {
-            select: {
-              name: true
-            }
-          }
-        },
-        orderBy: {
-          name: 'asc'
-        }
-      });
-
-      // Format response
-      const courseData = courses.map(course => ({
-        id: course.id,
-        name: course.name,
-        code: course.code,
-        department: course.department,
-        studentCount: course._count.students,
-        instructor: course.instructor?.name || 'Not Assigned'
-      }));
-
-      // Calculate department-wise enrollment
-      const departmentEnrollment = {};
-      courseData.forEach(course => {
-        if (!departmentEnrollment[course.department]) {
-          departmentEnrollment[course.department] = {
-            totalCourses: 0,
-            totalStudents: 0
-          };
-        }
-        departmentEnrollment[course.department].totalCourses++;
-        departmentEnrollment[course.department].totalStudents += course.studentCount;
-      });
-
-      res.json({
-        courses: courseData,
-        departmentSummary: Object.entries(departmentEnrollment).map(([dept, data]) => ({
-          department: dept,
-          ...data,
-          averageEnrollment: data.totalCourses ? Math.round(data.totalStudents / data.totalCourses) : 0
-        })),
-        totalCourses: courseData.length,
-        totalEnrollments: courseData.reduce((sum, course) => sum + course.studentCount, 0)
-      });
-    } catch (dbError) {
-      console.error('Database error in courses report:', dbError);
-      // Return sample data as fallback
-      res.json({
-        courses: [],
-        departmentSummary: [],
-        totalCourses: 0,
-        totalEnrollments: 0
-      });
-    }
+    const courses = await prisma.course.findMany({
+      where,
+      include: { department: true, students: true }
+    });
+    // Enrollment stats by department
+    const enrollmentStatsMap = {};
+    courses.forEach(course => {
+      const deptName = course.department?.name || 'Unknown';
+      if (!enrollmentStatsMap[deptName]) {
+        enrollmentStatsMap[deptName] = { name: deptName, studentCount: 0 };
+      }
+      enrollmentStatsMap[deptName].studentCount += course.students.length;
+    });
+    const enrollmentStats = Object.values(enrollmentStatsMap);
+    res.json({ enrollmentStats });
   } catch (err) {
-    console.error('Error generating course report:', err);
-    res.status(500).send('Server error');
+    console.error('Error fetching course report:', err);
+    res.status(500).json({ msg: 'Server error fetching course report' });
   }
 });
 
 // @route   GET api/reports/permissions
-// @desc    Get permission request reports
+// @desc    Permission report for admin
 // @access  Private (Admin)
 router.get('/permissions', auth, async (req, res) => {
   try {
-    // Check if user is admin
     if (req.user.role !== 'admin') {
       return res.status(403).json({ msg: 'Access denied. Admin only.' });
     }
-
-    const { period = 'month' } = req.query;
-    
-    // Get start date based on period
-    const startDate = new Date();
-    if (period === 'week') {
-      startDate.setDate(startDate.getDate() - 7);
-    } else if (period === 'month') {
-      startDate.setMonth(startDate.getMonth() - 1);
-    } else if (period === 'year') {
-      startDate.setFullYear(startDate.getFullYear() - 1);
+    const { department, startDate, endDate } = req.query;
+    // Build query
+    const where = {};
+    if (department) {
+      where['course'] = { departmentId: parseInt(department) };
     }
-
-    try {
-      // Get permission data
-      const permissions = await prisma.permission.findMany({
-        where: {
-          createdAt: {
-            gte: startDate
-          }
-        },
-        include: {
-          user: {
-            select: {
-              name: true,
-              department: true
-            }
-          },
-          course: {
-            select: {
-              name: true,
-              code: true,
-              department: true
-            }
-          }
-        },
-        orderBy: {
-          createdAt: 'desc'
-        }
-      });
-
-      // Group by status
-      const byStatus = {
-        pending: permissions.filter(p => p.status === 'pending'),
-        approved: permissions.filter(p => p.status === 'approved'),
-        rejected: permissions.filter(p => p.status === 'rejected')
+    if (startDate && endDate) {
+      where['createdAt'] = {
+        gte: new Date(startDate),
+        lte: new Date(endDate)
       };
-
-      // Group by department
-      const byDepartment = {};
-      permissions.forEach(permission => {
-        const dept = permission.user.department;
-        if (!byDepartment[dept]) {
-          byDepartment[dept] = {
-            total: 0,
-            pending: 0,
-            approved: 0,
-            rejected: 0
-          };
-        }
-        byDepartment[dept].total++;
-        byDepartment[dept][permission.status]++;
-      });
-
-      res.json({
-        period,
-        totalRequests: permissions.length,
-        byStatus: {
-          pending: byStatus.pending.length,
-          approved: byStatus.approved.length,
-          rejected: byStatus.rejected.length
-        },
-        byDepartment: Object.entries(byDepartment).map(([dept, counts]) => ({
-          department: dept,
-          ...counts,
-          approvalRate: counts.total ? Math.round((counts.approved / counts.total) * 100) : 0
-        })),
-        recentRequests: permissions.slice(0, 10)
-      });
-    } catch (dbError) {
-      console.error('Database error in permissions report:', dbError);
-      // Return sample data as fallback
-      res.json({
-        period,
-        totalRequests: 0,
-        byStatus: {
-          pending: 0,
-          approved: 0,
-          rejected: 0
-        },
-        byDepartment: [],
-        recentRequests: []
-      });
     }
+    const permissions = await prisma.permission.findMany({
+      where,
+      include: { course: true }
+    });
+    // Permission stats
+    const permissionStats = {
+      approved: permissions.filter(p => p.status === 'approved').length,
+      pending: permissions.filter(p => p.status === 'pending').length,
+      rejected: permissions.filter(p => p.status === 'rejected').length
+    };
+    res.json({ permissionStats });
   } catch (err) {
-    console.error('Error generating permissions report:', err);
-    res.status(500).send('Server error');
+    console.error('Error fetching permission report:', err);
+    res.status(500).json({ msg: 'Server error fetching permission report' });
   }
 });
 
-module.exports = router; 
+module.exports = router;

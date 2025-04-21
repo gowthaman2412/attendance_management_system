@@ -31,7 +31,8 @@ import StaffProfile from './pages/staff/Profile';
 import AdminDashboard from './pages/admin/Dashboard';
 import AdminUsers from './pages/admin/Users';
 import AdminCourses from './pages/admin/Courses';
-import AdminLocations from './pages/admin/Locations';
+import AdminDepartments from './pages/admin/Departments';
+import AdminEnrollments from './pages/admin/Enrollments';
 import AdminReports from './pages/admin/Reports';
 import AdminSettings from './pages/admin/Settings';
 
@@ -179,7 +180,8 @@ function App() {
             <Route path="dashboard" element={<AdminDashboard />} />
             <Route path="users" element={<AdminUsers />} />
             <Route path="courses" element={<AdminCourses />} />
-            <Route path="locations" element={<AdminLocations />} />
+            <Route path="departments" element={<AdminDepartments />} />
+            <Route path="student-enrollments" element={<AdminEnrollments />} />
             <Route path="reports" element={<AdminReports />} />
             <Route path="settings" element={<AdminSettings />} />
           </Route>
