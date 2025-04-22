@@ -148,7 +148,7 @@ const StudentDashboard = () => {
         </Grid>
         
         {/* Upcoming Classes */}
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Paper elevation={3} sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
               Upcoming Classes
@@ -183,7 +183,7 @@ const StudentDashboard = () => {
               </Typography>
             )}
           </Paper>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Container>
   );

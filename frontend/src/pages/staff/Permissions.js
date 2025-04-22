@@ -182,9 +182,9 @@ const StaffPermissions = () => {
             <TableBody>
               {permissions.map((permission) => (
                 <TableRow key={permission.id}>
-                  <TableCell>{permission.student?.name || 'Unknown'}</TableCell>
+                  <TableCell>{permission.user?.name || 'Unknown'}</TableCell>
                   <TableCell>{permission.type}</TableCell>
-                  <TableCell>{formatDate(permission.date)}</TableCell>
+                  <TableCell>{ (permission?.startDate!=permission?.endDate) ? (`${formatDate(permission?.startDate)} to ${formatDate(permission?.endDate)}`) : (`${formatDate(permission?.endDate)}`) }</TableCell>
                   <TableCell>{getStatusChip(permission.status)}</TableCell>
                   <TableCell>
                     <Box sx={{ display: 'flex', gap: 1 }}>
@@ -281,7 +281,7 @@ const StaffPermissions = () => {
                 <Grid item xs={12}>
                   <Typography variant="subtitle2">Staff Note:</Typography>
                   <Paper variant="outlined" sx={{ p: 2, mt: 1 }}>
-                    <Typography variant="body1">{selectedPermission.staffNote || 'No note provided'}</Typography>
+                    <Typography variant="body1">{selectedPermission.reviewNotes || 'No note provided'}</Typography>
                   </Paper>
                 </Grid>
               )}

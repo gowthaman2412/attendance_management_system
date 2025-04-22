@@ -94,6 +94,11 @@ const StudentPermissions = () => {
     });
   };
 
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString();
+  };
+
   const handleFileChange = (e) => {
     setFormData({
       ...formData,
@@ -217,7 +222,7 @@ const StudentPermissions = () => {
             {permissions.length > 0 ? (
               permissions.map((permission) => (
                 <TableRow key={permission.id}>
-                  <TableCell>{new Date(permission.date).toLocaleDateString()}</TableCell>
+                  <TableCell>{ (permission?.startDate!=permission?.endDate) ? (`${formatDate(permission?.startDate)} to ${formatDate(permission?.endDate)}`) : (`${formatDate(permission?.endDate)}`) }</TableCell>
                   <TableCell>{permission.course.name} ({permission.course.code})</TableCell>
                   <TableCell>{getTypeLabel(permission.type)}</TableCell>
                   <TableCell>{permission.reason}</TableCell>
@@ -309,7 +314,7 @@ const StudentPermissions = () => {
               disabled={formSubmitting}
               InputLabelProps={{ shrink: true }}
             />
-            
+            <p>If the leave is for one day then mention the same date in both start Date and end Date</p>
             <TextField
               margin="normal"
               required
@@ -324,7 +329,7 @@ const StudentPermissions = () => {
               disabled={formSubmitting}
             />
             
-            <Box sx={{ mt: 2 }}>
+            {/* <Box sx={{ mt: 2 }}>
               <Typography variant="body2" color="text.secondary" gutterBottom>
                 Supporting Document (optional)
               </Typography>
@@ -335,7 +340,7 @@ const StudentPermissions = () => {
                 onChange={handleFileChange}
                 disabled={formSubmitting}
               />
-            </Box>
+            </Box> */}
           </Box>
         </DialogContent>
         <DialogActions>

@@ -373,7 +373,8 @@ router.get('/:id', auth, async (req, res) => {
       include: {
         user: true,
         course: true,
-        reviewer: true
+        reviewer: true,
+        reviewNotes: true
       }
     });
 
@@ -423,7 +424,7 @@ router.put('/:id', [
       return res.status(403).json({ msg: 'Not authorized to update permission requests' });
     }
 
-    const { status, reviewNotes } = req.body;
+    const { status, staffNote } = req.body;
 
     // Find permission request
     const permission = await prisma.permission.findUnique({
@@ -450,7 +451,7 @@ router.put('/:id', [
       where: { id: parseInt(req.params.id) },
       data: {
         status,
-        reviewNotes,
+        reviewNotes:staffNote,
         reviewDate: new Date(),
         reviewer: {
           connect: { id: parseInt(req.user.id) }

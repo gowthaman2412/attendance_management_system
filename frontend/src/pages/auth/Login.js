@@ -50,20 +50,23 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
     setError(null);
-    
     try {
       const { email, password, role } = formData;
       await login(email, password, null, role);
-      
       // Get user role from zustand store
       const user = useAuthStore.getState().user;
-      
+      // Ensure the selected role matches the user's actual role
+      if (!user || user.role !== role) {
+        setError('Role and credentials do not match. Please select the correct role.');
+        setLoading(false);
+        return;
+      }
       // Redirect based on user role
-      if (user?.role === 'student') {
+      if (user.role === 'student') {
         navigate('/student/dashboard');
-      } else if (user?.role === 'staff') {
+      } else if (user.role === 'staff') {
         navigate('/staff/dashboard');
-      } else if (user?.role === 'admin') {
+      } else if (user.role === 'admin') {
         navigate('/admin/dashboard');
       }
     } catch (err) {
@@ -163,20 +166,7 @@ const Login = () => {
               {loading ? <CircularProgress size={24} /> : 'Sign In'}
             </Button>
             <Grid container>
-              <Grid item xs>
-                <Link to="/forgot-password" style={{ textDecoration: 'none' }}>
-                  <Typography variant="body2" color="primary">
-                    Forgot password?
-                  </Typography>
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link to="/register" style={{ textDecoration: 'none' }}>
-                  <Typography variant="body2" color="primary">
-                    Don't have an account? Sign Up
-                  </Typography>
-                </Link>
-              </Grid>
+              {/* Remove forgot password and sign up links */}
             </Grid>
           </Box>
         </Paper>

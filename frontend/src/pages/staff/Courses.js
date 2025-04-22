@@ -185,13 +185,13 @@ const StaffCourses = () => {
                   >
                     View Students
                   </Button>
-                  <Button 
+                  {/* <Button 
                     size="small" 
                     startIcon={<AddIcon />}
                     onClick={() => handleAddMaterial(course)}
                   >
                     Add Material
-                  </Button>
+                  </Button> */}
                 </CardActions>
               </Card>
             </Grid>

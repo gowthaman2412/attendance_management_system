@@ -192,10 +192,10 @@ const StudentAttendance = () => {
             <TableRow>
               <TableCell>Date</TableCell>
               <TableCell>Course</TableCell>
-              <TableCell>Time</TableCell>
+              {/* <TableCell>Time</TableCell> */}
               <TableCell>Status</TableCell>
               {/* <TableCell>Location</TableCell> */}
-              <TableCell>Marked By</TableCell>
+              {/* <TableCell>Marked By</TableCell> */}
             </TableRow>
           </TableHead>
           <TableBody>
@@ -204,10 +204,10 @@ const StudentAttendance = () => {
                 <TableRow key={record?.id}>
                   <TableCell>{new Date(record?.date).toLocaleDateString()}</TableCell>
                   <TableCell>{record?.course?.name} ({record?.course?.code})</TableCell>
-                  <TableCell>{record?.startTime} - {record?.endTime}</TableCell>
+                  {/* <TableCell>{record?.startTime} - {record?.endTime}</TableCell> */}
                   <TableCell>{getStatusChip(record?.status)}</TableCell>
-                  <TableCell>{record?.name || '-'}</TableCell>
-                  <TableCell>{record?.markedBy?.name}</TableCell>
+                  {/* <TableCell>{record?.name || '-'}</TableCell> */}
+                  {/* <TableCell>{record?.markedBy?.name}</TableCell> */}
                 </TableRow>
               ))
             ) : (
