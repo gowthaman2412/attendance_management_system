@@ -14,15 +14,8 @@ import {
   InputLabel,
   Select,
   MenuItem,
-  TextField,
-  Divider,
-  Card,
-  CardContent,
-  List,
-  ListItem,
-  ListItemText
+  TextField
 } from '@mui/material';
-import { Download as DownloadIcon, Print as PrintIcon } from '@mui/icons-material';
 import axios from 'axios';
 
 const AdminReports = () => {
@@ -48,6 +41,7 @@ const AdminReports = () => {
     } else if (tabValue === 2) {
       fetchPermissionReport();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tabValue]);
 
   const fetchDepartmentsAndCourses = async () => {
@@ -280,7 +274,7 @@ const AdminReports = () => {
         <Typography variant="h4" gutterBottom>
           Reports & Analytics
         </Typography>
-        <Box sx={{ display: 'flex', gap: 2 }}>
+        {/* <Box sx={{ display: 'flex', gap: 2 }}>
           <Button
             variant="outlined"
             startIcon={<DownloadIcon />}
@@ -295,7 +289,7 @@ const AdminReports = () => {
           >
             Print
           </Button>
-        </Box>
+        </Box> */}
       </Box>
 
       <Paper elevation={3} sx={{ p: 3, mb: 3 }}>

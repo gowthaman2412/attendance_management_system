@@ -170,7 +170,6 @@ model CourseMaterial {
   link         String
   uploadedById Int
   createdAt    DateTime @default(now())
-
   course     Course @relation(fields: [courseId], references: [id])
   uploadedBy User   @relation(fields: [uploadedById], references: [id])
 }
