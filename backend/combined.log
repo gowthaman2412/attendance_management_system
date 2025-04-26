@@ -6666,3 +6666,5 @@
 {"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-26T05:54:16.392Z"}
 {"level":"info","message":"GET /api/users/recent","timestamp":"2025-04-26T05:54:16.408Z"}
 {"level":"info","message":"GET /api/permissions/recent","timestamp":"2025-04-26T05:54:16.433Z"}
+{"level":"info","message":"Database connected successfully","timestamp":"2025-04-26T06:06:57.962Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2025-04-26T06:06:57.973Z"}
