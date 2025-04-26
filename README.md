@@ -1,4 +1,5 @@
-# AI-Powered Intelligent Attendance Management System (AMS)
+
+# Attendance Management System (AMS)
 
 An automated attendance tracking system for educational institutions using mobile location technology and AI.
 
@@ -38,7 +39,7 @@ An automated attendance tracking system for educational institutions using mobil
 
 - **Frontend**: React.js with Material-UI
 - **Backend**: Node.js/Express
-- **Database**: MongoDB, Redis (caching), Time-series DB (location data)
+- **Database**: postgres, Redis (caching), Time-series DB (location data)
 - **Authentication**: JWT token-based
 - **Real-time Updates**: WebSockets
 - **Infrastructure**: Cloud-based (AWS/GCP/Azure)
@@ -47,7 +48,7 @@ An automated attendance tracking system for educational institutions using mobil
 
 ### Prerequisites
 - Node.js (v14+)
-- MongoDB
+- postgres
 - Redis
 - npm or yarn
 
@@ -59,14 +60,11 @@ An automated attendance tracking system for educational institutions using mobil
    # Backend
    cd backend
    npm install
-   
-   # Admin Web Interface
-   cd admin-web
+
+   # Frontend
+   cd frontend
    npm install
    
-   # Mobile Apps (React Native)
-   cd mobile-app
-   npm install
    ```
 
 3. Configure environment variables
