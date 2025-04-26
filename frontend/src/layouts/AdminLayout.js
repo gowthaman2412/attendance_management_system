@@ -18,18 +18,14 @@ import {
   Menu,
   MenuItem,
   Divider,
-  Badge
 } from '@mui/material';
 import {
   Menu as MenuIcon,
   Dashboard as DashboardIcon,
   People as UsersIcon,
   School as CoursesIcon,
-  LocationOn as LocationsIcon,
   Assessment as ReportsIcon,
   Settings as SettingsIcon,
-  // Person as ProfileIcon,
-  Notifications as NotificationsIcon,
   Logout as LogoutIcon
 } from '@mui/icons-material';
 import useAuthStore from '../store/authStore';
@@ -83,7 +79,6 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 const AdminLayout = () => {
   const [open, setOpen] = useState(true);
   const [anchorEl, setAnchorEl] = useState(null);
-  const [notificationAnchorEl, setNotificationAnchorEl] = useState(null);
   const { user, logout, loadUser } = useAuthStore();
   const navigate = useNavigate();
   const location = useLocation();
@@ -104,13 +99,7 @@ const AdminLayout = () => {
     setAnchorEl(null);
   };
 
-  const handleNotificationMenuOpen = (event) => {
-    setNotificationAnchorEl(event.currentTarget);
-  };
 
-  const handleNotificationMenuClose = () => {
-    setNotificationAnchorEl(null);
-  };
 
   const handleLogout = () => {
     logout();
@@ -121,7 +110,8 @@ const AdminLayout = () => {
     { text: 'Dashboard', icon: <DashboardIcon />, path: '/admin/dashboard' },
     { text: 'Users', icon: <UsersIcon />, path: '/admin/users' },
     { text: 'Courses', icon: <CoursesIcon />, path: '/admin/courses' },
-    { text: 'Locations', icon: <LocationsIcon />, path: '/admin/locations' },
+    { text: 'Departments', icon: <CoursesIcon />, path: '/admin/departments' },
+    { text: 'Student Enrollments', icon: <UsersIcon />, path: '/admin/student-enrollments' },
     { text: 'Reports', icon: <ReportsIcon />, path: '/admin/reports' },
     { text: 'Settings', icon: <SettingsIcon />, path: '/admin/settings' },
   ];
@@ -141,13 +131,8 @@ const AdminLayout = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
-            AIMS - Admin Portal
+            AMS - Admin Portal
           </Typography>
-          <IconButton color="inherit" onClick={handleNotificationMenuOpen}>
-            <Badge badgeContent={2} color="error">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
           <IconButton
             onClick={handleProfileMenuOpen}
             sx={{ ml: 1 }}
@@ -213,26 +198,7 @@ const AdminLayout = () => {
         </MenuItem>
       </Menu>
 
-      {/* Notifications Menu */}
-      <Menu
-        anchorEl={notificationAnchorEl}
-        open={Boolean(notificationAnchorEl)}
-        onClose={handleNotificationMenuClose}
-        onClick={handleNotificationMenuClose}
-        transformOrigin={{ horizontal: 'right', vertical: 'top' }}
-        anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
-      >
-        <MenuItem>
-          <Typography variant="body2">New staff account created</Typography>
-        </MenuItem>
-        <MenuItem>
-          <Typography variant="body2">System update scheduled for tomorrow</Typography>
-        </MenuItem>
-        <Divider />
-        <MenuItem>
-          <Typography variant="body2" color="primary">View all notifications</Typography>
-        </MenuItem>
-      </Menu>
+
     </Box>
   );
 };

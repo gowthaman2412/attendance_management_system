@@ -131,7 +131,7 @@ const AdminDashboard = () => {
             {recentUsers.length > 0 ? (
               <List>
                 {recentUsers.map(user => (
-                  <React.Fragment key={user.id || user._id}>
+                  <React.Fragment key={user.id || user.id}>
                     <ListItem>
                       <ListItemText 
                         primary={user.name} 
@@ -167,7 +167,7 @@ const AdminDashboard = () => {
             {recentPermissions.length > 0 ? (
               <List>
                 {recentPermissions.map((permission) => (
-                  <React.Fragment key={permission.id || permission._id}>
+                  <React.Fragment key={permission.id || permission.id}>
                     <ListItem>
                       <ListItemText 
                         primary={`${permission.user?.name || permission.student?.name} - ${permission.type}`} 

@@ -88,7 +88,7 @@ const StaffDashboard = () => {
             {courses.length > 0 ? (
               <List>
                 {courses.slice(0, 5).map((course) => (
-                  <React.Fragment key={course._id}>
+                  <React.Fragment key={course.id}>
                     <ListItem>
                       <ListItemText 
                         primary={course.name} 
@@ -121,7 +121,7 @@ const StaffDashboard = () => {
             {pendingPermissions.length > 0 ? (
               <List>
                 {pendingPermissions.slice(0, 5).map((permission) => (
-                  <React.Fragment key={permission._id}>
+                  <React.Fragment key={permission.id}>
                     <ListItem>
                       <ListItemText 
                         primary={`${permission.student?.name} - ${permission.type}`} 
@@ -146,7 +146,7 @@ const StaffDashboard = () => {
         </Grid>
         
         {/* Upcoming Classes */}
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Paper elevation={3} sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
               Upcoming Classes
@@ -154,7 +154,7 @@ const StaffDashboard = () => {
             {upcomingClasses.length > 0 ? (
               <Grid container spacing={2}>
                 {upcomingClasses.map((classItem) => (
-                  <Grid item xs={12} sm={6} md={4} key={classItem._id}>
+                  <Grid item xs={12} sm={6} md={4} key={classItem.id}>
                     <Card variant="outlined">
                       <CardHeader
                         title={classItem.course.name}
@@ -174,7 +174,7 @@ const StaffDashboard = () => {
                           Students: {classItem.course.students?.length || 0}
                         </Typography>
                         <Box sx={{ mt: 2 }}>
-                          <Button size="small" variant="contained" href={`/staff/attendance?class=${classItem._id}`}>
+                          <Button size="small" variant="contained" href={`/staff/attendance?class=${classItem.id}`}>
                             Take Attendance
                           </Button>
                         </Box>
@@ -189,7 +189,7 @@ const StaffDashboard = () => {
               </Typography>
             )}
           </Paper>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Container>
   );

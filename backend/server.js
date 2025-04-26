@@ -57,10 +57,12 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/users', require('./routes/users'));
 app.use('/api/attendance', require('./routes/attendance'));
 app.use('/api/permissions', require('./routes/permissions'));
+// Remove or comment out the locations route registration
 app.use('/api/locations', require('./routes/locations'));
 app.use('/api/analytics', require('./routes/analytics'));
 app.use('/api/courses', coursesRouter);
 app.use('/api/departments', require('./routes/departments'));
+app.use('/api/enrollments', require('./routes/enrollments'));
 app.use('/api/reports', require('./routes/reports'));
 app.use('/api/settings', require('./routes/settings'));
 

@@ -128,7 +128,7 @@ const StudentDashboard = () => {
             {courses.length > 0 ? (
               <List>
                 {courses.slice(0, 5).map((course) => (
-                  <React.Fragment key={course._id}>
+                  <React.Fragment key={course.id}>
                     <ListItem>
                       <ListItemText 
                         primary={course.name} 
@@ -148,7 +148,7 @@ const StudentDashboard = () => {
         </Grid>
         
         {/* Upcoming Classes */}
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Paper elevation={3} sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
               Upcoming Classes
@@ -156,7 +156,7 @@ const StudentDashboard = () => {
             {upcomingClasses.length > 0 ? (
               <Grid container spacing={2}>
                 {upcomingClasses.map((classItem) => (
-                  <Grid item xs={12} sm={6} md={4} key={classItem._id}>
+                  <Grid item xs={12} sm={6} md={4} key={classItem.id}>
                     <Card variant="outlined">
                       <CardHeader
                         title={classItem.course.name}
@@ -183,7 +183,7 @@ const StudentDashboard = () => {
               </Typography>
             )}
           </Paper>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Container>
   );

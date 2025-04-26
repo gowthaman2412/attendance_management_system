@@ -38,6 +38,7 @@ const StaffAttendance = () => {
   const [selectedCourse, setSelectedCourse] = useState('');
   const [selectedDate, setSelectedDate] = useState('');
   const [attendanceData, setAttendanceData] = useState([]);
+  const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
@@ -56,9 +57,9 @@ const StaffAttendance = () => {
         if (classId) {
           const classData = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/courses/class/${classId}`);
           if (classData.data && classData.data.course) {
-            setSelectedCourse(classData.data.course._id);
+            setSelectedCourse(classData.data.course.id);
             setSelectedDate(new Date(classData.data.date).toISOString().split('T')[0]);
-            fetchAttendance(classData.data.course._id, new Date(classData.data.date).toISOString().split('T')[0]);
+            fetchAttendance(classData.data.course.id, new Date(classData.data.date).toISOString().split('T')[0]);
           }
         }
       } catch (err) {
@@ -86,12 +87,13 @@ const StaffAttendance = () => {
         const courseRes = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/courses/${courseId}`);
         const students = courseRes.data.students || [];
         
+        // Map students correctly for attendance UI
         const emptyAttendance = students.map(student => ({
-          student: {
-            _id: student._id,
-            name: student.name,
-            studentId: student.studentId
-          },
+          studentId: student.studentId,
+          name: student.name,
+          email: student.email,
+          id: student.id,
+          department: student.department,
           status: 'absent',
           note: '',
           isEditing: false
@@ -130,7 +132,7 @@ const StaffAttendance = () => {
   const handleStatusChange = (studentId, newStatus) => {
     setAttendanceData(prevData => 
       prevData.map(record => 
-        record.student._id === studentId ? { ...record, status: newStatus } : record
+        record?.studentId === studentId ? { ...record, status: newStatus } : record
       )
     );
   };
@@ -150,7 +152,7 @@ const StaffAttendance = () => {
   const handleSaveNote = () => {
     setAttendanceData(prevData => 
       prevData.map(record => 
-        record.student._id === currentStudent.student._id ? { ...record, note } : record
+        record?.studentId === currentStudent.studentId ? { ...record, note } : record
       )
     );
     handleCloseNoteDialog();
@@ -167,14 +169,14 @@ const StaffAttendance = () => {
       setError(null);
       
       const attendancePayload = attendanceData.map(record => ({
-        student: record.student._id,
+        student: record.studentId,
         course: selectedCourse,
         date: selectedDate,
         status: record.status,
         note: record.note || ''
       }));
       
-      await axios.post('/api/attendance/bulk', { attendance: attendancePayload });
+      await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/attendance/bulk`, { attendance: attendancePayload });
       
       setSuccess('Attendance saved successfully');
       setTimeout(() => setSuccess(null), 3000);
@@ -217,7 +219,7 @@ const StaffAttendance = () => {
               >
                 <MenuItem value=""><em>Select a course</em></MenuItem>
                 {courses.map((course) => (
-                  <MenuItem key={course._id} value={course._id}>
+                  <MenuItem key={course.id} value={course.id}>
                     {course.name} ({course.code})
                   </MenuItem>
                 ))}
@@ -284,9 +286,9 @@ const StaffAttendance = () => {
               </TableHead>
               <TableBody>
                 {attendanceData.map((record) => (
-                  <TableRow key={record.student._id}>
-                    <TableCell>{record.student.studentId}</TableCell>
-                    <TableCell>{record.student.name}</TableCell>
+                  <TableRow key={record.id}>
+                    <TableCell>{record.studentId || '-'}</TableCell>
+                    <TableCell>{record.name}</TableCell>
                     <TableCell>
                       <Box sx={{ display: 'flex', gap: 1 }}>
                         {['present', 'late', 'absent', 'excused'].map((status) => (
@@ -295,7 +297,7 @@ const StaffAttendance = () => {
                             label={status.charAt(0).toUpperCase() + status.slice(1)}
                             color={record.status === status ? getStatusColor(status) : 'default'}
                             variant={record.status === status ? 'filled' : 'outlined'}
-                            onClick={() => handleStatusChange(record.student._id, status)}
+                            onClick={() => handleStatusChange(record.studentId, status)}
                             clickable
                           />
                         ))}
@@ -336,7 +338,7 @@ const StaffAttendance = () => {
       {/* Note Dialog */}
       <Dialog open={openNoteDialog} onClose={handleCloseNoteDialog}>
         <DialogTitle>
-          Add Note for {currentStudent?.student.name}
+          Add Note for {currentStudent?.name}
         </DialogTitle>
         <DialogContent>
           <TextField

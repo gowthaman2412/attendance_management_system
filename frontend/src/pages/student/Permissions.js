@@ -39,7 +39,8 @@ const StudentPermissions = () => {
   const [formData, setFormData] = useState({
     course: '',
     type: '',
-    date: '',
+    startDate: '',
+    endDate: '',
     reason: '',
     document: null
   });
@@ -77,7 +78,8 @@ const StudentPermissions = () => {
     setFormData({
       course: '',
       type: '',
-      date: '',
+      startDate: '',
+      endDate: '',
       reason: '',
       document: null
     });
@@ -92,6 +94,11 @@ const StudentPermissions = () => {
     });
   };
 
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString();
+  };
+
   const handleFileChange = (e) => {
     setFormData({
       ...formData,
@@ -103,7 +110,7 @@ const StudentPermissions = () => {
     e.preventDefault();
     
     // Validate form
-    if (!formData.course || !formData.type || !formData.date || !formData.reason) {
+    if (!formData.course || !formData.type || !formData.startDate || !formData.endDate || !formData.reason) {
       setFormError('Please fill in all required fields');
       return;
     }
@@ -112,22 +119,17 @@ const StudentPermissions = () => {
       setFormSubmitting(true);
       setFormError(null);
       
-      // Create form data for file upload
-      const submitData = new FormData();
-      submitData.append('course', formData.course);
-      submitData.append('type', formData.type);
-      submitData.append('date', formData.date);
-      submitData.append('reason', formData.reason);
-      if (formData.document) {
-        submitData.append('document', formData.document);
-      }
+      // Send as JSON payload
+      const payload = {
+        course: formData.course,
+        type: formData.type,
+        reason: formData.reason,
+        startDate: formData.startDate,
+        endDate: formData.endDate
+      };
       
-      // Submit permission request
-      const res = await api.post('/api/permissions', submitData, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
-        }
-      });
+      // Optionally handle document upload separately if needed
+      const res = await api.post('/api/permissions', payload);
       
       // Add new permission to the list
       setPermissions([res.data, ...permissions]);
@@ -219,8 +221,8 @@ const StudentPermissions = () => {
           <TableBody>
             {permissions.length > 0 ? (
               permissions.map((permission) => (
-                <TableRow key={permission._id}>
-                  <TableCell>{new Date(permission.date).toLocaleDateString()}</TableCell>
+                <TableRow key={permission.id}>
+                  <TableCell>{ (permission?.startDate!=permission?.endDate) ? (`${formatDate(permission?.startDate)} to ${formatDate(permission?.endDate)}`) : (`${formatDate(permission?.endDate)}`) }</TableCell>
                   <TableCell>{permission.course.name} ({permission.course.code})</TableCell>
                   <TableCell>{getTypeLabel(permission.type)}</TableCell>
                   <TableCell>{permission.reason}</TableCell>
@@ -261,7 +263,7 @@ const StudentPermissions = () => {
                 disabled={formSubmitting}
               >
                 {courses.map((course) => (
-                  <MenuItem key={course._id} value={course._id}>
+                  <MenuItem key={course.id} value={course.id}>
                     {course.name} ({course.code})
                   </MenuItem>
                 ))}
@@ -289,16 +291,30 @@ const StudentPermissions = () => {
               margin="normal"
               required
               fullWidth
-              id="date"
-              label="Date"
-              name="date"
+              id="startDate"
+              label="Start Date"
+              name="startDate"
               type="date"
-              value={formData.date}
+              value={formData.startDate || ''}
               onChange={handleFormChange}
               disabled={formSubmitting}
               InputLabelProps={{ shrink: true }}
             />
             
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              id="endDate"
+              label="End Date"
+              name="endDate"
+              type="date"
+              value={formData.endDate || ''}
+              onChange={handleFormChange}
+              disabled={formSubmitting}
+              InputLabelProps={{ shrink: true }}
+            />
+            <p>If the leave is for one day then mention the same date in both start Date and end Date</p>
             <TextField
               margin="normal"
               required
@@ -313,7 +329,7 @@ const StudentPermissions = () => {
               disabled={formSubmitting}
             />
             
-            <Box sx={{ mt: 2 }}>
+            {/* <Box sx={{ mt: 2 }}>
               <Typography variant="body2" color="text.secondary" gutterBottom>
                 Supporting Document (optional)
               </Typography>
@@ -324,7 +340,7 @@ const StudentPermissions = () => {
                 onChange={handleFileChange}
                 disabled={formSubmitting}
               />
-            </Box>
+            </Box> */}
           </Box>
         </DialogContent>
         <DialogActions>

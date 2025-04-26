@@ -98,33 +98,22 @@ const StudentProfile = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
     try {
       setSaving(true);
       setError(null);
-      
-      // Create form data for file upload
-      const submitData = new FormData();
-      submitData.append('name', formData.name);
-      submitData.append('phone', formData.phone);
-      submitData.append('address', formData.address);
-      submitData.append('emergencyContact', formData.emergencyContact);
-      if (formData.profileImage) {
-        submitData.append('profileImage', formData.profileImage);
-      }
-      
+      // Send as JSON payload instead of FormData
+      const payload = {
+        name: formData.name,
+        email: profileData.email, // Always send email
+        phone: formData.phone,
+        address: formData.address,
+        emergencyContact: formData.emergencyContact
+      };
       // Update profile
-      const res = await updateProfile(user.id, submitData);
-      
-      // Update local state
-      setProfileData({
-        ...profileData,
-        ...res
-      });
-      
+      const res = await updateProfile(user.id, payload);
+      setProfileData({ ...profileData, ...res });
       setSuccess(true);
       setEditMode(false);
-      
     } catch (err) {
       console.error('Error updating profile:', err);
       setError(err.response?.data?.msg || 'Failed to update profile. Please try again.');
@@ -175,7 +164,7 @@ const StudentProfile = () => {
                 alt={profileData?.name}
                 sx={{ width: 150, height: 150, mx: 'auto', mb: 2 }}
               />
-              {editMode && (
+              {/* {editMode && (
                 <Box sx={{ mt: 2 }}>
                   <input
                     accept="image/*"
@@ -190,7 +179,7 @@ const StudentProfile = () => {
                     </Button>
                   </label>
                 </Box>
-              )}
+              )} */}
               <Typography variant="h6" sx={{ mt: 2 }}>
                 {profileData?.name}
               </Typography>

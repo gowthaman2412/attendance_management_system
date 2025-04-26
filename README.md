@@ -1,3 +1,4 @@
+
 # Attendance Management System (AMS)
 
 An automated attendance tracking system for educational institutions using mobile location technology and AI.

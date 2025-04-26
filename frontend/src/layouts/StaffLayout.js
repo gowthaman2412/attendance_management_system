@@ -17,8 +17,7 @@ import {
   Avatar,
   Menu,
   MenuItem,
-  Divider,
-  Badge
+  Divider
 } from '@mui/material';
 import {
   Menu as MenuIcon,
@@ -27,7 +26,6 @@ import {
   EventNote as AttendanceIcon,
   AssignmentTurnedIn as PermissionsIcon,
   Person as ProfileIcon,
-  Notifications as NotificationsIcon,
   Logout as LogoutIcon
 } from '@mui/icons-material';
 import useAuthStore from '../store/authStore';
@@ -81,7 +79,6 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 const StaffLayout = () => {
   const [open, setOpen] = useState(true);
   const [anchorEl, setAnchorEl] = useState(null);
-  const [notificationAnchorEl, setNotificationAnchorEl] = useState(null);
   const { user, logout, loadUser } = useAuthStore();
   const navigate = useNavigate();
   const location = useLocation();
@@ -100,14 +97,6 @@ const StaffLayout = () => {
 
   const handleProfileMenuClose = () => {
     setAnchorEl(null);
-  };
-
-  const handleNotificationMenuOpen = (event) => {
-    setNotificationAnchorEl(event.currentTarget);
-  };
-
-  const handleNotificationMenuClose = () => {
-    setNotificationAnchorEl(null);
   };
 
   const handleLogout = () => {
@@ -138,13 +127,8 @@ const StaffLayout = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
-            AIMS - Staff Portal
+            AMS - Staff Portal
           </Typography>
-          <IconButton color="inherit" onClick={handleNotificationMenuOpen}>
-            <Badge badgeContent={3} color="error">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
           <IconButton
             onClick={handleProfileMenuOpen}
             sx={{ ml: 1 }}
@@ -192,7 +176,6 @@ const StaffLayout = () => {
         <DrawerHeader />
         <Outlet />
       </Main>
-      
       {/* Profile Menu */}
       <Menu
         anchorEl={anchorEl}
@@ -214,30 +197,6 @@ const StaffLayout = () => {
             <LogoutIcon fontSize="small" />
           </ListItemIcon>
           Logout
-        </MenuItem>
-      </Menu>
-
-      {/* Notifications Menu */}
-      <Menu
-        anchorEl={notificationAnchorEl}
-        open={Boolean(notificationAnchorEl)}
-        onClose={handleNotificationMenuClose}
-        onClick={handleNotificationMenuClose}
-        transformOrigin={{ horizontal: 'right', vertical: 'top' }}
-        anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
-      >
-        <MenuItem>
-          <Typography variant="body2">New student joined your course CS101</Typography>
-        </MenuItem>
-        <MenuItem>
-          <Typography variant="body2">Permission request pending approval</Typography>
-        </MenuItem>
-        <MenuItem>
-          <Typography variant="body2">Department meeting scheduled for tomorrow</Typography>
-        </MenuItem>
-        <Divider />
-        <MenuItem>
-          <Typography variant="body2" color="primary">View all notifications</Typography>
         </MenuItem>
       </Menu>
     </Box>

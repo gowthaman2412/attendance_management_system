@@ -107,12 +107,14 @@ const StaffProfile = () => {
       setError(null);
       
       // Create form data for file upload
-      const submitData = new FormData();
-      submitData.append('name', formData.name);
-      submitData.append('phone', formData.phone);
-      submitData.append('address', formData.address);
-      submitData.append('department', formData.department);
-      submitData.append('specialization', formData.specialization);
+      const submitData = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        address: formData.address,
+        department: formData.department,
+        specialization: formData.specialization
+      }
       if (formData.profileImage) {
         submitData.append('profileImage', formData.profileImage);
       }
@@ -179,7 +181,7 @@ const StaffProfile = () => {
                 alt={profileData?.name}
                 sx={{ width: 150, height: 150, mx: 'auto', mb: 2 }}
               />
-              {editMode && (
+              {/* {editMode && (
                 <Box sx={{ mt: 2 }}>
                   <input
                     accept="image/*"
@@ -194,7 +196,7 @@ const StaffProfile = () => {
                     </Button>
                   </label>
                 </Box>
-              )}
+              )} */}
               <Typography variant="h6" sx={{ mt: 2 }}>
                 {profileData?.name}
               </Typography>
@@ -258,7 +260,7 @@ const StaffProfile = () => {
                     helperText="Email cannot be changed"
                   />
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12}>
                   <TextField
                     fullWidth
                     label="Phone Number"
@@ -272,7 +274,7 @@ const StaffProfile = () => {
                     }}
                   />
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                {/* <Grid item xs={12} sm={6}>
                   <TextField
                     fullWidth
                     label="Department"
@@ -285,7 +287,7 @@ const StaffProfile = () => {
                       readOnly: !editMode
                     }}
                   />
-                </Grid>
+                </Grid> */}
                 <Grid item xs={12}>
                   <TextField
                     fullWidth

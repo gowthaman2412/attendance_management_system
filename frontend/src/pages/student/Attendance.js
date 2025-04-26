@@ -134,7 +134,7 @@ const StudentAttendance = () => {
             >
               <MenuItem value="all">All Courses</MenuItem>
               {courses.map((course) => (
-                <MenuItem key={course._id} value={course._id}>
+                <MenuItem key={course.id} value={course.id}>
                   {course.name} ({course.code})
                 </MenuItem>
               ))}
@@ -192,22 +192,22 @@ const StudentAttendance = () => {
             <TableRow>
               <TableCell>Date</TableCell>
               <TableCell>Course</TableCell>
-              <TableCell>Time</TableCell>
+              {/* <TableCell>Time</TableCell> */}
               <TableCell>Status</TableCell>
-              <TableCell>Location</TableCell>
-              <TableCell>Marked By</TableCell>
+              {/* <TableCell>Location</TableCell> */}
+              {/* <TableCell>Marked By</TableCell> */}
             </TableRow>
           </TableHead>
           <TableBody>
             {attendanceRecords.length > 0 ? (
               attendanceRecords.map((record) => (
-                <TableRow key={record._id}>
-                  <TableCell>{new Date(record.date).toLocaleDateString()}</TableCell>
-                  <TableCell>{record.course.name} ({record.course.code})</TableCell>
-                  <TableCell>{record.startTime} - {record.endTime}</TableCell>
-                  <TableCell>{getStatusChip(record.status)}</TableCell>
-                  <TableCell>{record.location.name}</TableCell>
-                  <TableCell>{record.markedBy.name}</TableCell>
+                <TableRow key={record?.id}>
+                  <TableCell>{new Date(record?.date).toLocaleDateString()}</TableCell>
+                  <TableCell>{record?.course?.name} ({record?.course?.code})</TableCell>
+                  {/* <TableCell>{record?.startTime} - {record?.endTime}</TableCell> */}
+                  <TableCell>{getStatusChip(record?.status)}</TableCell>
+                  {/* <TableCell>{record?.name || '-'}</TableCell> */}
+                  {/* <TableCell>{record?.markedBy?.name}</TableCell> */}
                 </TableRow>
               ))
             ) : (

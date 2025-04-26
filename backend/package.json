@@ -1,5 +1,5 @@
 {
-  "name": "aims-backend",
+  "name": "ams-backend",
   "version": "1.0.0",
   "description": "Backend for AI-Powered Intelligent Attendance Management System",
   "main": "server.js",
